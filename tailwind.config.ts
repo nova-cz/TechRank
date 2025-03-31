@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,44 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+                // TechRank custom colors
+                techblue: {
+                    50: '#e6f7ff',
+                    100: '#b8e8ff',
+                    200: '#8ad9ff', 
+                    300: '#5cccff',
+                    400: '#2ebdff',
+                    500: '#00aeff',
+                    600: '#0095e6',
+                    700: '#0072cc',
+                    800: '#004fb3',
+                    900: '#003c8a',
+                },
+                techpurple: {
+                    50: '#f5e9ff',
+                    100: '#e0c6ff',
+                    200: '#caa3ff',
+                    300: '#b47fff',
+                    400: '#9a5aff',
+                    500: '#8034ff',
+                    600: '#7022e6',
+                    700: '#5711cc',
+                    800: '#3e00b3',
+                    900: '#26008a',
+                },
+                techgray: {
+                    50: '#f7f9fc',
+                    100: '#eaeef5',
+                    200: '#d5dce8',
+                    300: '#b1bdcd',
+                    400: '#8797b2',
+                    500: '#627798',
+                    600: '#4c5d7d',
+                    700: '#3a4661',
+                    800: '#273045',
+                    900: '#171d2a',
+                }
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,12 +122,25 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+                'float': {
+                    '0%, 100%': { transform: 'translateY(0)' },
+                    '50%': { transform: 'translateY(-10px)' }
+                },
+                'pulse-slow': {
+                    '0%, 100%': { opacity: '1' },
+                    '50%': { opacity: '0.7' }
+                }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+                'float': 'float 5s ease-in-out infinite',
+                'pulse-slow': 'pulse-slow 3s ease-in-out infinite'
+			},
+            backgroundImage: {
+                'tech-pattern': 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%239C92AC\' fill-opacity=\'0.05\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
+            }
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
