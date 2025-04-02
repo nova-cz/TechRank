@@ -86,21 +86,126 @@ const SearchResults = () => {
       const max = parseInt(maxPrice) || 50000;
       
       const mockProducts = [
-        { id: 1, name: "Smartphone Galaxy S23", price: 19999, category: "smartphones", platform: "amazon", url: "https://www.amazon.com.mx/" },
-        { id: 2, name: "MacBook Pro M2", price: 34999, category: "laptops", platform: "liverpool", url: "https://www.liverpool.com.mx/" },
-        { id: 3, name: "iPad Pro 12.9", price: 22499, category: "tablets", platform: "amazon", url: "https://www.amazon.com.mx/" },
-        { id: 4, name: "AirPods Pro", price: 4999, category: "audio", platform: "mercadolibre", url: "https://www.mercadolibre.com.mx/" },
-        { id: 5, name: "Xbox Series X", price: 12999, category: "gaming", platform: "walmart", url: "https://www.walmart.com.mx/" },
-        { id: 6, name: "Apple Watch Series 8", price: 8599, category: "wearables", platform: "bestbuy", url: "https://www.bestbuy.com.mx/" },
-        { id: 7, name: "iPhone 14 Pro Max", price: 25999, category: "smartphones", platform: "liverpool", url: "https://www.liverpool.com.mx/" },
-        { id: 8, name: "Laptop Gamer Alienware", price: 42999, category: "laptops", platform: "mercadolibre", url: "https://www.mercadolibre.com.mx/" },
-        { id: 9, name: "Samsung Galaxy Tab S8", price: 15499, category: "tablets", platform: "coppel", url: "https://www.coppel.com.mx/" },
-        { id: 10, name: "Sony WH-1000XM5", price: 7999, category: "audio", platform: "amazon", url: "https://www.amazon.com.mx/" },
-        { id: 11, name: "PlayStation 5", price: 11999, category: "gaming", platform: "liverpool", url: "https://www.liverpool.com.mx/" },
-        { id: 12, name: "Samsung Galaxy Watch 5", price: 5499, category: "wearables", platform: "walmart", url: "https://www.walmart.com.mx/" },
-        { id: 13, name: "Xiaomi Redmi Note 12", price: 4999, category: "smartphones", platform: "mercadolibre", url: "https://www.mercadolibre.com.mx/" },
-        { id: 14, name: "Lenovo ThinkPad X1", price: 32999, category: "laptops", platform: "bestbuy", url: "https://www.bestbuy.com.mx/" },
-        { id: 15, name: "Kindle Paperwhite", price: 3299, category: "tablets", platform: "amazon", url: "https://www.amazon.com.mx/" },
+        { 
+          id: 1, 
+          name: "Smartphone Galaxy S23", 
+          price: 19999, 
+          category: "smartphones", 
+          platform: "amazon", 
+          url: "https://www.amazon.com.mx/Samsung-Galaxy-S23-256GB-Phantom/dp/B0BLP45GY8/"
+        },
+        { 
+          id: 2, 
+          name: "MacBook Pro M2", 
+          price: 34999, 
+          category: "laptops", 
+          platform: "liverpool", 
+          url: "https://www.liverpool.com.mx/tienda/pdp/apple-macbook-pro-13-chip-m2-8-gb-256-gb-ssd-space-gray/1127999735" 
+        },
+        { 
+          id: 3, 
+          name: "iPad Pro 12.9", 
+          price: 22499, 
+          category: "tablets", 
+          platform: "amazon", 
+          url: "https://www.amazon.com.mx/Apple-iPad-12-9-pulgadas-Wi-Fi-256GB/dp/B0C6Z1YYF8/" 
+        },
+        { 
+          id: 4, 
+          name: "AirPods Pro", 
+          price: 4999, 
+          category: "audio", 
+          platform: "mercadolibre", 
+          url: "https://www.mercadolibre.com.mx/apple-airpods-pro-2da-generacion-blanco/p/MLM19615244" 
+        },
+        { 
+          id: 5, 
+          name: "Xbox Series X", 
+          price: 12999, 
+          category: "gaming", 
+          platform: "walmart", 
+          url: "https://www.walmart.com.mx/videojuegos/consolas/xbox/consola-xbox-series-x-1tb-negro_00088984713203" 
+        },
+        { 
+          id: 6, 
+          name: "Apple Watch Series 8", 
+          price: 8599, 
+          category: "wearables", 
+          platform: "bestbuy", 
+          url: "https://www.bestbuy.com.mx/p/apple-watch-series-8-gps-45mm-caja-de-aluminio-product-red-y-correa-deportiva-product-red/1000259264" 
+        },
+        { 
+          id: 7, 
+          name: "iPhone 14 Pro Max", 
+          price: 25999, 
+          category: "smartphones", 
+          platform: "liverpool", 
+          url: "https://www.liverpool.com.mx/tienda/pdp/apple-iphone-14-pro-max-256-gb/1126823979" 
+        },
+        { 
+          id: 8, 
+          name: "Laptop Gamer Alienware", 
+          price: 42999, 
+          category: "laptops", 
+          platform: "mercadolibre", 
+          url: "https://www.mercadolibre.com.mx/laptop-gamer-dell-alienware-m16-r1-negra-16-qhd-240hz-intel-core-i9-13900hx-32gb-de-ram-1tb-ssd-nvidia-geforce-rtx-4090-144-w-windows-11-home/p/MLM23181341" 
+        },
+        { 
+          id: 9, 
+          name: "Samsung Galaxy Tab S8", 
+          price: 15499, 
+          category: "tablets", 
+          platform: "coppel", 
+          url: "https://www.coppel.com/tablet-samsung-galaxy-tab-s8-pm-8025132" 
+        },
+        { 
+          id: 10, 
+          name: "Sony WH-1000XM5", 
+          price: 7999, 
+          category: "audio", 
+          platform: "amazon", 
+          url: "https://www.amazon.com.mx/Sony-Auriculares-cancelaci%C3%B3n-inal%C3%A1mbricos-WH-1000XM5/dp/B09XS7JWHH" 
+        },
+        { 
+          id: 11, 
+          name: "PlayStation 5", 
+          price: 11999, 
+          category: "gaming", 
+          platform: "liverpool", 
+          url: "https://www.liverpool.com.mx/tienda/pdp/consola-playstation-5-slim-825-gb/1136100144" 
+        },
+        { 
+          id: 12, 
+          name: "Samsung Galaxy Watch 5", 
+          price: 5499, 
+          category: "wearables", 
+          platform: "walmart", 
+          url: "https://www.walmart.com.mx/electronicos/gadgets-y-smartwatches/smartwatches/samsung-galaxy-watch5-44mm-smart-watch-bt-gray_00195434251788" 
+        },
+        { 
+          id: 13, 
+          name: "Xiaomi Redmi Note 12", 
+          price: 4999, 
+          category: "smartphones", 
+          platform: "mercadolibre", 
+          url: "https://www.mercadolibre.com.mx/xiaomi-redmi-note-12-dual-sim-128-gb-onyx-gray-4-gb-ram/p/MLM21819485" 
+        },
+        { 
+          id: 14, 
+          name: "Lenovo ThinkPad X1", 
+          price: 32999, 
+          category: "laptops", 
+          platform: "bestbuy", 
+          url: "https://www.bestbuy.com.mx/p/lenovo-laptop-thinkpad-x1-carbon-gen11-14-intel-core-i7-16gb-512gb-ssd-windows-11-pro/1000271903" 
+        },
+        { 
+          id: 15, 
+          name: "Kindle Paperwhite", 
+          price: 3299, 
+          category: "tablets", 
+          platform: "amazon", 
+          url: "https://www.amazon.com.mx/kindle-paperwhite-16-gb-ahora-con-una-pantalla-de-68-y-ajuste-de-luz-calida-sin-publicidad/dp/B08N36XNTT" 
+        },
       ];
       
       const filteredProducts = mockProducts.filter(product => {
