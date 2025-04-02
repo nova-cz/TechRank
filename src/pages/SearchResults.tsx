@@ -1,0 +1,256 @@
+
+import { useState, useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { Search, ArrowRight, Filter } from "lucide-react";
+
+interface Product {
+  id: number;
+  name: string;
+  price: number;
+  category: string;
+}
+
+const SearchResults = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const searchParams = new URLSearchParams(location.search);
+  
+  const [minPrice, setMinPrice] = useState(searchParams.get("min") || "");
+  const [maxPrice, setMaxPrice] = useState(searchParams.get("max") || "");
+  const [category, setCategory] = useState(searchParams.get("category") || "");
+  const [currency, setCurrency] = useState(searchParams.get("currency") || "MXN");
+  const [searchResults, setSearchResults] = useState<Product[]>([]);
+  const [isSearching, setIsSearching] = useState(false);
+
+  // Categorías disponibles
+  const categories = [
+    { id: "smartphones", name: "Smartphones" },
+    { id: "laptops", name: "Laptops" },
+    { id: "tablets", name: "Tablets" },
+    { id: "audio", name: "Audífonos" },
+    { id: "gaming", name: "Gaming" },
+    { id: "wearables", name: "Wearables" },
+  ];
+
+  // Símbolos de moneda
+  const currencySymbols: Record<string, string> = {
+    MXN: "$",
+    USD: "US$",
+    EUR: "€",
+  };
+
+  // Obtener el nombre de la categoría según su ID
+  const getCategoryName = (id: string) => {
+    const found = categories.find(cat => cat.id === id);
+    return found ? found.name : id;
+  };
+
+  // Función para buscar productos
+  const handleSearch = (e?: React.FormEvent) => {
+    if (e) e.preventDefault();
+    
+    setIsSearching(true);
+    
+    // Actualizar la URL con los parámetros de búsqueda
+    const params = new URLSearchParams();
+    if (minPrice) params.set("min", minPrice);
+    if (maxPrice) params.set("max", maxPrice);
+    if (category) params.set("category", category);
+    params.set("currency", currency);
+    
+    navigate(`/resultados?${params.toString()}`, { replace: true });
+    
+    // Simulamos la búsqueda con un setTimeout
+    setTimeout(() => {
+      // Generamos resultados ficticios basados en los criterios
+      const min = parseInt(minPrice) || 0;
+      const max = parseInt(maxPrice) || 50000;
+      
+      const mockProducts = [
+        { id: 1, name: "Smartphone XYZ", price: 8999, category: "smartphones" },
+        { id: 2, name: "Laptop Pro", price: 24999, category: "laptops" },
+        { id: 3, name: "Tablet Ultra", price: 12499, category: "tablets" },
+        { id: 4, name: "Audífonos NK300", price: 2999, category: "audio" },
+        { id: 5, name: "Consola Next Gen", price: 9999, category: "gaming" },
+        { id: 6, name: "Smartwatch Tech", price: 4599, category: "wearables" },
+        { id: 7, name: "Smartphone Premium", price: 15999, category: "smartphones" },
+        { id: 8, name: "Laptop Gamer", price: 32999, category: "laptops" },
+        { id: 9, name: "Tablet Mini", price: 8499, category: "tablets" },
+        { id: 10, name: "Audífonos Pro", price: 4999, category: "audio" },
+      ];
+      
+      const filteredProducts = mockProducts.filter(product => {
+        const matchesCategory = !category || product.category === category;
+        const matchesPrice = product.price >= min && (max === 0 || product.price <= max);
+        return matchesCategory && matchesPrice;
+      });
+      
+      setSearchResults(filteredProducts);
+      setIsSearching(false);
+    }, 800);
+  };
+
+  // Cargar resultados al iniciar o cuando cambian los parámetros
+  useEffect(() => {
+    handleSearch();
+  }, []);
+
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <main className="flex-grow container mx-auto px-4 py-8">
+        <div className="mb-8">
+          <h1 className="text-3xl font-bold mb-4">Resultados de búsqueda</h1>
+          
+          <div className="glass-card rounded-xl p-6 shadow-md mb-8">
+            <form onSubmit={handleSearch} className="grid grid-cols-1 md:grid-cols-5 gap-4">
+              <div className="space-y-2">
+                <Label htmlFor="minPrice">Precio mínimo</Label>
+                <div className="relative">
+                  <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    <span className="text-gray-500">{currencySymbols[currency]}</span>
+                  </div>
+                  <Input
+                    id="minPrice"
+                    type="number"
+                    placeholder="0"
+                    className="pl-8"
+                    value={minPrice}
+                    onChange={(e) => setMinPrice(e.target.value)}
+                  />
+                </div>
+              </div>
+              
+              <div className="space-y-2">
+                <Label htmlFor="maxPrice">Precio máximo</Label>
+                <div className="relative">
+                  <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    <span className="text-gray-500">{currencySymbols[currency]}</span>
+                  </div>
+                  <Input
+                    id="maxPrice"
+                    type="number"
+                    placeholder="50000"
+                    className="pl-8"
+                    value={maxPrice}
+                    onChange={(e) => setMaxPrice(e.target.value)}
+                  />
+                </div>
+              </div>
+              
+              <div className="space-y-2">
+                <Label htmlFor="currency">Moneda</Label>
+                <Select value={currency} onValueChange={setCurrency}>
+                  <SelectTrigger id="currency">
+                    <SelectValue placeholder="Seleccionar moneda" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="MXN">Pesos (MXN)</SelectItem>
+                    <SelectItem value="USD">Dólares (USD)</SelectItem>
+                    <SelectItem value="EUR">Euros (EUR)</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+              
+              <div className="space-y-2">
+                <Label htmlFor="category">Categoría</Label>
+                <Select value={category} onValueChange={setCategory}>
+                  <SelectTrigger id="category">
+                    <SelectValue placeholder="Seleccionar categoría" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="">Todas las categorías</SelectItem>
+                    {categories.map((cat) => (
+                      <SelectItem key={cat.id} value={cat.id}>
+                        {cat.name}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+              
+              <div className="flex items-end">
+                <Button 
+                  type="submit" 
+                  className="w-full bg-gradient-to-r from-techblue-500 to-techpurple-500 hover:from-techblue-600 hover:to-techpurple-600"
+                  disabled={isSearching}
+                >
+                  {isSearching ? (
+                    <>Buscando...</>
+                  ) : (
+                    <>
+                      <Filter className="w-4 h-4 mr-2" />
+                      Filtrar
+                    </>
+                  )}
+                </Button>
+              </div>
+            </form>
+          </div>
+          
+          <div className="bg-card rounded-xl shadow-md overflow-hidden">
+            <div className="p-6 border-b">
+              <div className="flex justify-between items-center">
+                <h2 className="text-xl font-semibold">
+                  {searchResults.length} productos encontrados
+                </h2>
+                {searchResults.length > 0 && (
+                  <div className="text-sm text-muted-foreground">
+                    Precio: {currencySymbols[currency]}{minPrice || '0'} - {maxPrice ? `${currencySymbols[currency]}${maxPrice}` : 'Sin límite'}
+                    {category && ` | Categoría: ${getCategoryName(category)}`}
+                  </div>
+                )}
+              </div>
+            </div>
+            
+            {searchResults.length > 0 ? (
+              <div className="overflow-x-auto">
+                <Table>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead>Producto</TableHead>
+                      <TableHead>Categoría</TableHead>
+                      <TableHead className="text-right">Precio</TableHead>
+                      <TableHead className="w-[100px]"></TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {searchResults.map(product => (
+                      <TableRow key={product.id}>
+                        <TableCell className="font-medium">{product.name}</TableCell>
+                        <TableCell>{getCategoryName(product.category)}</TableCell>
+                        <TableCell className="text-right font-bold text-gradient">
+                          {currencySymbols[currency]}{product.price.toLocaleString()}
+                        </TableCell>
+                        <TableCell>
+                          <Button variant="ghost" size="sm">
+                            Ver <ArrowRight className="ml-1 h-4 w-4" />
+                          </Button>
+                        </TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </div>
+            ) : (
+              <div className="p-8 text-center">
+                <p className="text-lg text-muted-foreground">No se encontraron productos con los criterios seleccionados.</p>
+                <p className="mt-2">Intenta ampliar tu búsqueda modificando los filtros.</p>
+              </div>
+            )}
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default SearchResults;

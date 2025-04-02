@@ -1,62 +1,19 @@
 
 import { useState } from "react";
-import { Search, ChevronDown } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { useToast } from "@/components/ui/use-toast";
 
 export default function PriceSearchForm() {
-  const { toast } = useToast();
+  const navigate = useNavigate();
   const [minPrice, setMinPrice] = useState("");
   const [maxPrice, setMaxPrice] = useState("");
   const [category, setCategory] = useState("");
   const [currency, setCurrency] = useState("MXN");
-  const [searchResults, setSearchResults] = useState<any[]>([]);
   const [isSearching, setIsSearching] = useState(false);
-
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSearching(true);
-    
-    // Simulamos la búsqueda con un setTimeout
-    setTimeout(() => {
-      // Generamos resultados ficticios basados en los criterios
-      const min = parseInt(minPrice) || 0;
-      const max = parseInt(maxPrice) || 50000;
-      
-      const mockProducts = [
-        { id: 1, name: "Smartphone XYZ", price: 8999, category: "smartphones" },
-        { id: 2, name: "Laptop Pro", price: 24999, category: "laptops" },
-        { id: 3, name: "Tablet Ultra", price: 12499, category: "tablets" },
-        { id: 4, name: "Audífonos NK300", price: 2999, category: "audio" },
-        { id: 5, name: "Consola Next Gen", price: 9999, category: "gaming" },
-        { id: 6, name: "Smartwatch Tech", price: 4599, category: "wearables" },
-      ];
-      
-      const filteredProducts = mockProducts.filter(product => {
-        const matchesCategory = !category || product.category === category;
-        const matchesPrice = product.price >= min && product.price <= max;
-        return matchesCategory && matchesPrice;
-      });
-      
-      setSearchResults(filteredProducts);
-      setIsSearching(false);
-      
-      // Mostramos un toast con los resultados
-      toast({
-        title: `${filteredProducts.length} productos encontrados`,
-        description: `Se encontraron ${filteredProducts.length} productos en el rango de precio ${currencySymbols[currency]}${min} - ${currencySymbols[currency]}${max}${category ? ` en la categoría ${getCategoryName(category)}` : ''}`,
-      });
-    }, 800);
-  };
-
-  const getCategoryName = (id: string) => {
-    const found = categories.find(cat => cat.id === id);
-    return found ? found.name : id;
-  };
 
   const currencySymbols: Record<string, string> = {
     MXN: "$",
@@ -72,6 +29,21 @@ export default function PriceSearchForm() {
     { id: "gaming", name: "Gaming" },
     { id: "wearables", name: "Wearables" },
   ];
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSearching(true);
+    
+    // Crear los parámetros de búsqueda para la URL
+    const params = new URLSearchParams();
+    if (minPrice) params.set("min", minPrice);
+    if (maxPrice) params.set("max", maxPrice);
+    if (category) params.set("category", category);
+    params.set("currency", currency);
+    
+    // Navegar a la página de resultados
+    navigate(`/resultados?${params.toString()}`);
+  };
 
   return (
     <form onSubmit={handleSearch} className="w-full max-w-4xl mx-auto">
@@ -157,23 +129,6 @@ export default function PriceSearchForm() {
               </>
             )}
           </Button>
-          
-          {searchResults.length > 0 && (
-            <div className="mt-6 space-y-4">
-              <h3 className="text-lg font-semibold">Resultados ({searchResults.length})</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {searchResults.map(product => (
-                  <div key={product.id} className="bg-card p-4 rounded-lg shadow-sm border">
-                    <div className="font-medium">{product.name}</div>
-                    <div className="text-lg font-bold text-gradient">
-                      {currencySymbols[currency]}{product.price}
-                    </div>
-                    <div className="text-sm text-muted-foreground">{getCategoryName(product.category)}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
         </div>
       </div>
     </form>

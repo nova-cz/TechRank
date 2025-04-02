@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Search } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 import { Button } from "@/components/ui/button";
 
@@ -16,6 +16,7 @@ export default function Navbar() {
     { name: "Inicio", path: "/" },
     { name: "Categorías", path: "/categorias" },
     { name: "Ofertas", path: "/ofertas" },
+    { name: "Buscador", path: "/resultados" },
   ];
 
   return (
