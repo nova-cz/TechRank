@@ -16,7 +16,6 @@ export default function Navbar() {
     { name: "Inicio", path: "/" },
     { name: "Categorías", path: "/categorias" },
     { name: "Ofertas", path: "/ofertas" },
-    { name: "Contacto", path: "/contacto" },
   ];
 
   return (
