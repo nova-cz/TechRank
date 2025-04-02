@@ -166,7 +166,7 @@ const SearchResults = () => {
                     <SelectValue placeholder="Seleccionar categoría" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="">Todas las categorías</SelectItem>
+                    <SelectItem value="all">Todas las categorías</SelectItem>
                     {categories.map((cat) => (
                       <SelectItem key={cat.id} value={cat.id}>
                         {cat.name}
@@ -204,7 +204,7 @@ const SearchResults = () => {
                 {searchResults.length > 0 && (
                   <div className="text-sm text-muted-foreground">
                     Precio: {currencySymbols[currency]}{minPrice || '0'} - {maxPrice ? `${currencySymbols[currency]}${maxPrice}` : 'Sin límite'}
-                    {category && ` | Categoría: ${getCategoryName(category)}`}
+                    {category && category !== 'all' && ` | Categoría: ${getCategoryName(category)}`}
                   </div>
                 )}
               </div>
