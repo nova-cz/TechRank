@@ -105,6 +105,7 @@ export default function PriceSearchForm() {
                   <SelectValue placeholder="Seleccionar categoría" />
                 </SelectTrigger>
                 <SelectContent>
+                  <SelectItem value="all">Todas las categorías</SelectItem>
                   {categories.map((category) => (
                     <SelectItem key={category.id} value={category.id}>
                       {category.name}
