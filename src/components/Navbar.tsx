@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, User, LogIn, LogOut } from "lucide-react";
+import { Menu, X, User, LogIn, LogOut, UserCircle } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 import { Button } from "@/components/ui/button";
 import {
@@ -11,10 +11,16 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // Mock authentication state
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [user, setUser] = useState({
+    name: "Usuario",
+    email: "usuario@ejemplo.com",
+    avatar: "" // Empty string for default avatar
+  });
 
   const toggleMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -23,11 +29,41 @@ export default function Navbar() {
   const handleLogin = () => {
     // Mock login functionality
     setIsLoggedIn(true);
+    setUser({
+      name: "Juan Pérez",
+      email: "juan.perez@ejemplo.com",
+      avatar: "https://i.pravatar.cc/150?img=3" // Random avatar for demonstration
+    });
+  };
+
+  const handleGoogleLogin = () => {
+    // Mock Google login functionality
+    setIsLoggedIn(true);
+    setUser({
+      name: "María González",
+      email: "maria.gonzalez@gmail.com",
+      avatar: "https://i.pravatar.cc/150?img=5" // Random avatar for demonstration
+    });
+  };
+
+  const handleCreateAccount = () => {
+    // Mock account creation
+    setIsLoggedIn(true);
+    setUser({
+      name: "Nuevo Usuario",
+      email: "nuevo.usuario@ejemplo.com",
+      avatar: "" // Empty string for default avatar
+    });
   };
 
   const handleLogout = () => {
     // Mock logout functionality
     setIsLoggedIn(false);
+    setUser({
+      name: "Usuario",
+      email: "usuario@ejemplo.com",
+      avatar: ""
+    });
   };
 
   const navLinks = [
@@ -64,15 +100,39 @@ export default function Navbar() {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon" className="rounded-full">
-                  <User className="h-5 w-5" />
+                  {isLoggedIn ? (
+                    <Avatar className="h-8 w-8">
+                      <AvatarImage src={user.avatar} alt={user.name} />
+                      <AvatarFallback>{user.name.charAt(0)}</AvatarFallback>
+                    </Avatar>
+                  ) : (
+                    <UserCircle className="h-5 w-5" />
+                  )}
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-56">
                 {isLoggedIn ? (
                   <>
+                    <div className="flex items-center gap-2 p-2">
+                      <Avatar className="h-8 w-8">
+                        <AvatarImage src={user.avatar} alt={user.name} />
+                        <AvatarFallback>{user.name.charAt(0)}</AvatarFallback>
+                      </Avatar>
+                      <div className="flex flex-col">
+                        <span className="text-sm font-medium">{user.name}</span>
+                        <span className="text-xs text-muted-foreground">{user.email}</span>
+                      </div>
+                    </div>
+                    <DropdownMenuSeparator />
                     <DropdownMenuItem>
                       <User className="mr-2 h-4 w-4" />
                       <span>Mi Perfil</span>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <span>Mis Pedidos</span>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <span>Favoritos</span>
                     </DropdownMenuItem>
                     <DropdownMenuSeparator />
                     <DropdownMenuItem onClick={handleLogout}>
@@ -82,18 +142,37 @@ export default function Navbar() {
                   </>
                 ) : (
                   <>
-                    <DropdownMenuItem onClick={handleLogin}>
-                      <LogIn className="mr-2 h-4 w-4" />
-                      <span>Iniciar sesión</span>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem onClick={handleLogin}>
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="mr-2 h-4 w-4" />
-                      <span>Continuar con Google</span>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem onClick={handleLogin}>
-                      <User className="mr-2 h-4 w-4" />
-                      <span>Crear cuenta</span>
-                    </DropdownMenuItem>
+                    <div className="p-3">
+                      <h4 className="text-sm font-semibold mb-2">Iniciar sesión</h4>
+                      <div className="space-y-2">
+                        <Button 
+                          onClick={handleLogin} 
+                          variant="outline" 
+                          className="w-full justify-start"
+                        >
+                          <LogIn className="mr-2 h-4 w-4" />
+                          <span>Con email y contraseña</span>
+                        </Button>
+                        <Button 
+                          onClick={handleGoogleLogin} 
+                          variant="outline" 
+                          className="w-full justify-start"
+                        >
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="mr-2 h-4 w-4" />
+                          <span>Continuar con Google</span>
+                        </Button>
+                      </div>
+                      <DropdownMenuSeparator className="my-2" />
+                      <p className="text-xs text-center text-muted-foreground mb-2">¿No tienes una cuenta?</p>
+                      <Button 
+                        onClick={handleCreateAccount} 
+                        variant="default" 
+                        className="w-full"
+                      >
+                        <User className="mr-2 h-4 w-4" />
+                        <span>Crear cuenta</span>
+                      </Button>
+                    </div>
                   </>
                 )}
               </DropdownMenuContent>
@@ -137,40 +216,75 @@ export default function Navbar() {
             ))}
             <div className="px-3 py-2">
               {isLoggedIn ? (
-                <Button 
-                  variant="ghost" 
-                  className="w-full justify-start"
-                  onClick={handleLogout}
-                >
-                  <LogOut className="mr-2 h-4 w-4" />
-                  <span>Cerrar sesión</span>
-                </Button>
-              ) : (
                 <div className="space-y-2">
+                  <div className="flex items-center gap-2 p-2">
+                    <Avatar className="h-8 w-8">
+                      <AvatarImage src={user.avatar} alt={user.name} />
+                      <AvatarFallback>{user.name.charAt(0)}</AvatarFallback>
+                    </Avatar>
+                    <div className="flex flex-col">
+                      <span className="text-sm font-medium">{user.name}</span>
+                      <span className="text-xs text-muted-foreground">{user.email}</span>
+                    </div>
+                  </div>
                   <Button 
                     variant="ghost" 
+                    className="w-full justify-start"
+                  >
+                    <User className="mr-2 h-4 w-4" />
+                    <span>Mi Perfil</span>
+                  </Button>
+                  <Button 
+                    variant="ghost" 
+                    className="w-full justify-start"
+                  >
+                    <span>Mis Pedidos</span>
+                  </Button>
+                  <Button 
+                    variant="ghost" 
+                    className="w-full justify-start"
+                  >
+                    <span>Favoritos</span>
+                  </Button>
+                  <Button 
+                    variant="ghost" 
+                    className="w-full justify-start"
+                    onClick={handleLogout}
+                  >
+                    <LogOut className="mr-2 h-4 w-4" />
+                    <span>Cerrar sesión</span>
+                  </Button>
+                </div>
+              ) : (
+                <div className="space-y-2">
+                  <h4 className="text-sm font-semibold mb-2">Iniciar sesión</h4>
+                  <Button 
+                    variant="outline" 
                     className="w-full justify-start"
                     onClick={handleLogin}
                   >
                     <LogIn className="mr-2 h-4 w-4" />
-                    <span>Iniciar sesión</span>
+                    <span>Con email y contraseña</span>
                   </Button>
                   <Button 
-                    variant="ghost" 
+                    variant="outline" 
                     className="w-full justify-start"
-                    onClick={handleLogin}
+                    onClick={handleGoogleLogin}
                   >
                     <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="mr-2 h-4 w-4" />
                     <span>Continuar con Google</span>
                   </Button>
-                  <Button 
-                    variant="ghost" 
-                    className="w-full justify-start"
-                    onClick={handleLogin}
-                  >
-                    <User className="mr-2 h-4 w-4" />
-                    <span>Crear cuenta</span>
-                  </Button>
+                  <div className="py-2">
+                    <p className="text-xs text-center text-muted-foreground mb-2">¿No tienes una cuenta?</p>
+                    <Button 
+                      variant="default" 
+                      className="w-full"
+                      onClick={handleCreateAccount}
+                    >
+                      <User className="mr-2 h-4 w-4" />
+                      <span>Crear cuenta</span>
+                    </Button>
+                  </div>
                 </div>
               )}
             </div>
