@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import Navbar from "@/components/Navbar";
@@ -390,7 +389,7 @@ const SearchResults = () => {
             </div>
             
             {searchResults.length > 0 ? (
-              <>
+              <Tabs value={view} defaultValue="table">
                 <TabsContent value="table" className="mt-0">
                   <div className="overflow-x-auto">
                     <Table>
@@ -476,7 +475,7 @@ const SearchResults = () => {
                     ))}
                   </div>
                 </TabsContent>
-              </>
+              </Tabs>
             ) : (
               <div className="p-8 text-center">
                 <p className="text-lg text-muted-foreground">No se encontraron productos con los criterios seleccionados.</p>
