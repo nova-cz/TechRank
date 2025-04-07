@@ -2,6 +2,8 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ExternalLink } from "lucide-react";
 
 const Offers = () => {
   const offers = [
@@ -12,7 +14,8 @@ const Offers = () => {
       price: 19999,
       oldPrice: 24999,
       store: "Amazon",
-      image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=2066&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=2066&auto=format&fit=crop",
+      url: "https://www.amazon.com.mx/Apple-MacBook-Chip-256GB-Almacenamiento/dp/B0CB64RKBV/"
     },
     {
       id: 2,
@@ -21,7 +24,8 @@ const Offers = () => {
       price: 12999,
       oldPrice: 15299,
       store: "Samsung Shop",
-      image: "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?q=80&w=2071&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?q=80&w=2071&auto=format&fit=crop",
+      url: "https://www.samsung.com/mx/smartphones/galaxy-s23/buy/"
     },
     {
       id: 3,
@@ -30,7 +34,8 @@ const Offers = () => {
       price: 5999,
       oldPrice: 7999,
       store: "Best Buy",
-      image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=1932&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=1932&auto=format&fit=crop",
+      url: "https://www.bestbuy.com.mx/p/sony-audifonos-noise-cancelling-wh-1000xm5-negro/1000279288"
     },
     {
       id: 4,
@@ -39,7 +44,8 @@ const Offers = () => {
       price: 23999,
       oldPrice: 26599,
       store: "Apple Store",
-      image: "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?q=80&w=2033&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?q=80&w=2033&auto=format&fit=crop",
+      url: "https://www.apple.com/mx/shop/buy-ipad/ipad-pro"
     },
   ];
 
@@ -73,6 +79,13 @@ const Offers = () => {
                 </div>
                 <div className="mt-2 text-sm text-muted-foreground">
                   Disponible en {offer.store}
+                </div>
+                <div className="mt-3">
+                  <a href={offer.url} target="_blank" rel="noopener noreferrer">
+                    <Button className="w-full" variant="outline">
+                      Ver oferta <ExternalLink className="ml-2 h-4 w-4" />
+                    </Button>
+                  </a>
                 </div>
               </div>
             </div>

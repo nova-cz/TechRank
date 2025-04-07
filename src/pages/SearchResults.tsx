@@ -8,7 +8,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Search, ArrowRight, Filter, ExternalLink } from "lucide-react";
+import { Search, Filter, ExternalLink } from "lucide-react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 interface Product {
   id: number;
@@ -17,6 +18,8 @@ interface Product {
   category: string;
   platform: string;
   url: string;
+  image?: string;
+  rating?: number;
 }
 
 const SearchResults = () => {
@@ -28,8 +31,10 @@ const SearchResults = () => {
   const [maxPrice, setMaxPrice] = useState(searchParams.get("max") || "");
   const [category, setCategory] = useState(searchParams.get("category") || "");
   const [currency, setCurrency] = useState(searchParams.get("currency") || "MXN");
+  const [selectedPlatform, setSelectedPlatform] = useState("all");
   const [searchResults, setSearchResults] = useState<Product[]>([]);
   const [isSearching, setIsSearching] = useState(false);
+  const [view, setView] = useState<"table" | "grid">("table");
 
   // Categorías disponibles
   const categories = [
@@ -50,6 +55,7 @@ const SearchResults = () => {
 
   // Plataformas de e-commerce
   const platforms = {
+    all: "Todas las plataformas",
     amazon: "Amazon",
     mercadolibre: "Mercado Libre",
     liverpool: "Liverpool",
@@ -92,7 +98,9 @@ const SearchResults = () => {
           price: 19999, 
           category: "smartphones", 
           platform: "amazon", 
-          url: "https://www.amazon.com.mx/Samsung-Galaxy-S23-256GB-Phantom/dp/B0BLP45GY8/"
+          url: "https://www.amazon.com.mx/Samsung-Galaxy-S23-256GB-Phantom/dp/B0BLP45GY8/",
+          image: "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?q=80&w=2071&auto=format&fit=crop",
+          rating: 4.7
         },
         { 
           id: 2, 
@@ -100,7 +108,9 @@ const SearchResults = () => {
           price: 34999, 
           category: "laptops", 
           platform: "liverpool", 
-          url: "https://www.liverpool.com.mx/tienda/pdp/apple-macbook-pro-13-chip-m2-8-gb-256-gb-ssd-space-gray/1127999735" 
+          url: "https://www.liverpool.com.mx/tienda/pdp/apple-macbook-pro-13-chip-m2-8-gb-256-gb-ssd-space-gray/1127999735",
+          image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=2066&auto=format&fit=crop",
+          rating: 4.9 
         },
         { 
           id: 3, 
@@ -108,7 +118,9 @@ const SearchResults = () => {
           price: 22499, 
           category: "tablets", 
           platform: "amazon", 
-          url: "https://www.amazon.com.mx/Apple-iPad-12-9-pulgadas-Wi-Fi-256GB/dp/B0C6Z1YYF8/" 
+          url: "https://www.amazon.com.mx/Apple-iPad-12-9-pulgadas-Wi-Fi-256GB/dp/B0C6Z1YYF8/",
+          image: "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?q=80&w=2033&auto=format&fit=crop",
+          rating: 4.8 
         },
         { 
           id: 4, 
@@ -116,7 +128,9 @@ const SearchResults = () => {
           price: 4999, 
           category: "audio", 
           platform: "mercadolibre", 
-          url: "https://www.mercadolibre.com.mx/apple-airpods-pro-2da-generacion-blanco/p/MLM19615244" 
+          url: "https://www.mercadolibre.com.mx/apple-airpods-pro-2da-generacion-blanco/p/MLM19615244",
+          image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=1932&auto=format&fit=crop",
+          rating: 4.6 
         },
         { 
           id: 5, 
@@ -124,7 +138,9 @@ const SearchResults = () => {
           price: 12999, 
           category: "gaming", 
           platform: "walmart", 
-          url: "https://www.walmart.com.mx/videojuegos/consolas/xbox/consola-xbox-series-x-1tb-negro_00088984713203" 
+          url: "https://www.walmart.com.mx/videojuegos/consolas/xbox/consola-xbox-series-x-1tb-negro_00088984713203",
+          image: "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=2071&auto=format&fit=crop",
+          rating: 4.5 
         },
         { 
           id: 6, 
@@ -132,7 +148,9 @@ const SearchResults = () => {
           price: 8599, 
           category: "wearables", 
           platform: "bestbuy", 
-          url: "https://www.bestbuy.com.mx/p/apple-watch-series-8-gps-45mm-caja-de-aluminio-product-red-y-correa-deportiva-product-red/1000259264" 
+          url: "https://www.bestbuy.com.mx/p/apple-watch-series-8-gps-45mm-caja-de-aluminio-product-red-y-correa-deportiva-product-red/1000259264",
+          image: "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?q=80&w=2072&auto=format&fit=crop",
+          rating: 4.7 
         },
         { 
           id: 7, 
@@ -140,7 +158,9 @@ const SearchResults = () => {
           price: 25999, 
           category: "smartphones", 
           platform: "liverpool", 
-          url: "https://www.liverpool.com.mx/tienda/pdp/apple-iphone-14-pro-max-256-gb/1126823979" 
+          url: "https://www.liverpool.com.mx/tienda/pdp/apple-iphone-14-pro-max-256-gb/1126823979",
+          image: "https://images.unsplash.com/photo-1591337676887-a217a6970a8a?q=80&w=1780&auto=format&fit=crop",
+          rating: 4.9 
         },
         { 
           id: 8, 
@@ -148,7 +168,9 @@ const SearchResults = () => {
           price: 42999, 
           category: "laptops", 
           platform: "mercadolibre", 
-          url: "https://www.mercadolibre.com.mx/laptop-gamer-dell-alienware-m16-r1-negra-16-qhd-240hz-intel-core-i9-13900hx-32gb-de-ram-1tb-ssd-nvidia-geforce-rtx-4090-144-w-windows-11-home/p/MLM23181341" 
+          url: "https://www.mercadolibre.com.mx/laptop-gamer-dell-alienware-m16-r1-negra-16-qhd-240hz-intel-core-i9-13900hx-32gb-de-ram-1tb-ssd-nvidia-geforce-rtx-4090-144-w-windows-11-home/p/MLM23181341",
+          image: "https://images.unsplash.com/photo-1603302576837-37561b2e2302?q=80&w=1768&auto=format&fit=crop",
+          rating: 4.4 
         },
         { 
           id: 9, 
@@ -156,7 +178,9 @@ const SearchResults = () => {
           price: 15499, 
           category: "tablets", 
           platform: "coppel", 
-          url: "https://www.coppel.com/tablet-samsung-galaxy-tab-s8-pm-8025132" 
+          url: "https://www.coppel.com/tablet-samsung-galaxy-tab-s8-pm-8025132",
+          image: "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?q=80&w=1964&auto=format&fit=crop",
+          rating: 4.5 
         },
         { 
           id: 10, 
@@ -164,7 +188,9 @@ const SearchResults = () => {
           price: 7999, 
           category: "audio", 
           platform: "amazon", 
-          url: "https://www.amazon.com.mx/Sony-Auriculares-cancelaci%C3%B3n-inal%C3%A1mbricos-WH-1000XM5/dp/B09XS7JWHH" 
+          url: "https://www.amazon.com.mx/Sony-Auriculares-cancelaci%C3%B3n-inal%C3%A1mbricos-WH-1000XM5/dp/B09XS7JWHH",
+          image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=2070&auto=format&fit=crop",
+          rating: 4.8 
         },
         { 
           id: 11, 
@@ -172,7 +198,9 @@ const SearchResults = () => {
           price: 11999, 
           category: "gaming", 
           platform: "liverpool", 
-          url: "https://www.liverpool.com.mx/tienda/pdp/consola-playstation-5-slim-825-gb/1136100144" 
+          url: "https://www.liverpool.com.mx/tienda/pdp/consola-playstation-5-slim-825-gb/1136100144",
+          image: "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?q=80&w=2070&auto=format&fit=crop",
+          rating: 4.9 
         },
         { 
           id: 12, 
@@ -180,7 +208,9 @@ const SearchResults = () => {
           price: 5499, 
           category: "wearables", 
           platform: "walmart", 
-          url: "https://www.walmart.com.mx/electronicos/gadgets-y-smartwatches/smartwatches/samsung-galaxy-watch5-44mm-smart-watch-bt-gray_00195434251788" 
+          url: "https://www.walmart.com.mx/electronicos/gadgets-y-smartwatches/smartwatches/samsung-galaxy-watch5-44mm-smart-watch-bt-gray_00195434251788",
+          image: "https://images.unsplash.com/photo-1560796952-f1c9b581b9a4?q=80&w=1974&auto=format&fit=crop",
+          rating: 4.6 
         },
         { 
           id: 13, 
@@ -188,7 +218,9 @@ const SearchResults = () => {
           price: 4999, 
           category: "smartphones", 
           platform: "mercadolibre", 
-          url: "https://www.mercadolibre.com.mx/xiaomi-redmi-note-12-dual-sim-128-gb-onyx-gray-4-gb-ram/p/MLM21819485" 
+          url: "https://www.mercadolibre.com.mx/xiaomi-redmi-note-12-dual-sim-128-gb-onyx-gray-4-gb-ram/p/MLM21819485",
+          image: "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?q=80&w=1979&auto=format&fit=crop",
+          rating: 4.4 
         },
         { 
           id: 14, 
@@ -196,7 +228,9 @@ const SearchResults = () => {
           price: 32999, 
           category: "laptops", 
           platform: "bestbuy", 
-          url: "https://www.bestbuy.com.mx/p/lenovo-laptop-thinkpad-x1-carbon-gen11-14-intel-core-i7-16gb-512gb-ssd-windows-11-pro/1000271903" 
+          url: "https://www.bestbuy.com.mx/p/lenovo-laptop-thinkpad-x1-carbon-gen11-14-intel-core-i7-16gb-512gb-ssd-windows-11-pro/1000271903",
+          image: "https://images.unsplash.com/photo-1636211930838-0441d0bcace1?q=80&w=1974&auto=format&fit=crop",
+          rating: 4.7 
         },
         { 
           id: 15, 
@@ -204,14 +238,17 @@ const SearchResults = () => {
           price: 3299, 
           category: "tablets", 
           platform: "amazon", 
-          url: "https://www.amazon.com.mx/kindle-paperwhite-16-gb-ahora-con-una-pantalla-de-68-y-ajuste-de-luz-calida-sin-publicidad/dp/B08N36XNTT" 
+          url: "https://www.amazon.com.mx/kindle-paperwhite-16-gb-ahora-con-una-pantalla-de-68-y-ajuste-de-luz-calida-sin-publicidad/dp/B08N36XNTT",
+          image: "https://images.unsplash.com/photo-1592803312586-775b10ab705c?q=80&w=1952&auto=format&fit=crop",
+          rating: 4.8 
         },
       ];
       
       const filteredProducts = mockProducts.filter(product => {
         const matchesCategory = !category || category === "all" || product.category === category;
         const matchesPrice = product.price >= min && (max === 0 || product.price <= max);
-        return matchesCategory && matchesPrice;
+        const matchesPlatform = selectedPlatform === "all" || product.platform === selectedPlatform;
+        return matchesCategory && matchesPrice && matchesPlatform;
       });
       
       setSearchResults(filteredProducts);
@@ -222,7 +259,7 @@ const SearchResults = () => {
   // Cargar resultados al iniciar o cuando cambian los parámetros
   useEffect(() => {
     handleSearch();
-  }, []);
+  }, [selectedPlatform]);
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -323,59 +360,123 @@ const SearchResults = () => {
                 <h2 className="text-xl font-semibold">
                   {searchResults.length} productos encontrados
                 </h2>
-                {searchResults.length > 0 && (
-                  <div className="text-sm text-muted-foreground">
-                    Precio: {currencySymbols[currency]}{minPrice || '0'} - {maxPrice ? `${currencySymbols[currency]}${maxPrice}` : 'Sin límite'}
-                    {category && category !== 'all' && ` | Categoría: ${getCategoryName(category)}`}
-                  </div>
-                )}
+                <div className="flex items-center gap-4">
+                  {searchResults.length > 0 && (
+                    <div className="text-sm text-muted-foreground hidden md:block">
+                      Precio: {currencySymbols[currency]}{minPrice || '0'} - {maxPrice ? `${currencySymbols[currency]}${maxPrice}` : 'Sin límite'}
+                      {category && category !== 'all' && ` | Categoría: ${getCategoryName(category)}`}
+                    </div>
+                  )}
+                  
+                  <Select value={selectedPlatform} onValueChange={setSelectedPlatform}>
+                    <SelectTrigger className="w-[180px]">
+                      <SelectValue placeholder="Plataforma" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {Object.entries(platforms).map(([value, label]) => (
+                        <SelectItem key={value} value={value}>{label}</SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                  
+                  <Tabs value={view} onValueChange={(value) => setView(value as "table" | "grid")} className="w-[200px]">
+                    <TabsList className="grid w-full grid-cols-2">
+                      <TabsTrigger value="table">Tabla</TabsTrigger>
+                      <TabsTrigger value="grid">Cuadrícula</TabsTrigger>
+                    </TabsList>
+                  </Tabs>
+                </div>
               </div>
             </div>
             
             {searchResults.length > 0 ? (
-              <div className="overflow-x-auto">
-                <Table>
-                  <TableHeader>
-                    <TableRow>
-                      <TableHead>Producto</TableHead>
-                      <TableHead>Categoría</TableHead>
-                      <TableHead>Plataforma</TableHead>
-                      <TableHead className="text-right">Precio</TableHead>
-                      <TableHead className="w-[100px]"></TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
+              <>
+                <TabsContent value="table" className="mt-0">
+                  <div className="overflow-x-auto">
+                    <Table>
+                      <TableHeader>
+                        <TableRow>
+                          <TableHead>Producto</TableHead>
+                          <TableHead>Categoría</TableHead>
+                          <TableHead>Plataforma</TableHead>
+                          <TableHead className="text-right">Precio</TableHead>
+                          <TableHead className="w-[100px]"></TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        {searchResults.map(product => (
+                          <TableRow key={product.id}>
+                            <TableCell className="font-medium">{product.name}</TableCell>
+                            <TableCell>{getCategoryName(product.category)}</TableCell>
+                            <TableCell>
+                              <div className="flex items-center">
+                                <span className={`font-medium ${product.platform === 'amazon' ? 'text-[#FF9900]' : 
+                                                 product.platform === 'mercadolibre' ? 'text-[#FFE600]' : 
+                                                 product.platform === 'liverpool' ? 'text-[#E10098]' : 
+                                                 product.platform === 'walmart' ? 'text-[#0071CE]' :
+                                                 product.platform === 'bestbuy' ? 'text-[#FFED00]' :
+                                                 product.platform === 'coppel' ? 'text-[#01A0E9]' : ''}`}>
+                                  {platforms[product.platform as keyof typeof platforms]}
+                                </span>
+                              </div>
+                            </TableCell>
+                            <TableCell className="text-right font-bold text-gradient">
+                              {currencySymbols[currency]}{product.price.toLocaleString()}
+                            </TableCell>
+                            <TableCell>
+                              <a href={product.url} target="_blank" rel="noopener noreferrer">
+                                <Button variant="ghost" size="sm">
+                                  Ver <ExternalLink className="ml-1 h-4 w-4" />
+                                </Button>
+                              </a>
+                            </TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </div>
+                </TabsContent>
+                
+                <TabsContent value="grid" className="mt-0">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
                     {searchResults.map(product => (
-                      <TableRow key={product.id}>
-                        <TableCell className="font-medium">{product.name}</TableCell>
-                        <TableCell>{getCategoryName(product.category)}</TableCell>
-                        <TableCell>
-                          <div className="flex items-center">
-                            <span className={`font-medium ${product.platform === 'amazon' ? 'text-[#FF9900]' : 
-                                             product.platform === 'mercadolibre' ? 'text-[#FFE600]' : 
-                                             product.platform === 'liverpool' ? 'text-[#E10098]' : 
-                                             product.platform === 'walmart' ? 'text-[#0071CE]' :
-                                             product.platform === 'bestbuy' ? 'text-[#FFED00]' :
-                                             product.platform === 'coppel' ? 'text-[#01A0E9]' : ''}`}>
+                      <div key={product.id} className="bg-background rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                        <div className="h-40 overflow-hidden">
+                          <img 
+                            src={product.image} 
+                            alt={product.name} 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                        <div className="p-4">
+                          <h3 className="font-semibold mb-1 line-clamp-1">{product.name}</h3>
+                          <p className="text-sm text-muted-foreground mb-2">{getCategoryName(product.category)}</p>
+                          <div className="flex justify-between items-center mb-3">
+                            <span className="font-bold text-primary">
+                              {currencySymbols[currency]}{product.price.toLocaleString()}
+                            </span>
+                            <span className={`text-xs px-2 py-1 rounded-full ${
+                              product.platform === 'amazon' ? 'bg-[#FF990020] text-[#FF9900]' : 
+                              product.platform === 'mercadolibre' ? 'bg-[#FFE60020] text-[#B8A200]' : 
+                              product.platform === 'liverpool' ? 'bg-[#E1009820] text-[#E10098]' : 
+                              product.platform === 'walmart' ? 'bg-[#0071CE20] text-[#0071CE]' :
+                              product.platform === 'bestbuy' ? 'bg-[#FFED0020] text-[#B8A200]' :
+                              product.platform === 'coppel' ? 'bg-[#01A0E920] text-[#01A0E9]' : ''
+                            }`}>
                               {platforms[product.platform as keyof typeof platforms]}
                             </span>
                           </div>
-                        </TableCell>
-                        <TableCell className="text-right font-bold text-gradient">
-                          {currencySymbols[currency]}{product.price.toLocaleString()}
-                        </TableCell>
-                        <TableCell>
                           <a href={product.url} target="_blank" rel="noopener noreferrer">
-                            <Button variant="ghost" size="sm">
-                              Ver <ExternalLink className="ml-1 h-4 w-4" />
+                            <Button size="sm" className="w-full">
+                              Ver producto <ExternalLink className="ml-1 h-3 w-3" />
                             </Button>
                           </a>
-                        </TableCell>
-                      </TableRow>
+                        </div>
+                      </div>
                     ))}
-                  </TableBody>
-                </Table>
-              </div>
+                  </div>
+                </TabsContent>
+              </>
             ) : (
               <div className="p-8 text-center">
                 <p className="text-lg text-muted-foreground">No se encontraron productos con los criterios seleccionados.</p>
