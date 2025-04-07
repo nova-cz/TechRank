@@ -55,21 +55,23 @@ const Categories = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
-      {/* Apple-style hero section */}
-      <div className="bg-background py-20 px-4 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">Categorías</h1>
-        <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-          Explore nuestra colección de tecnología de última generación, diseñada para mejorar tu vida diaria.
-        </p>
+      {/* Nike-style hero section */}
+      <div className="bg-secondary py-16 px-4">
+        <div className="container mx-auto">
+          <h1 className="nike-title mb-4">CATEGORÍAS</h1>
+          <p className="nike-subtitle max-w-3xl">
+            Explora nuestra colección de tecnología de última generación, diseñada para mejorar tu vida diaria.
+          </p>
+        </div>
       </div>
       
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Apple-style category grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        {/* Nike-style category grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {categories.map((category) => (
             <div 
               key={category.id}
-              className="group flex flex-col rounded-2xl overflow-hidden bg-card transition-all duration-300 hover:shadow-xl"
+              className="nike-card group cursor-pointer"
               onClick={() => handleCategoryClick(category.id)}
             >
               <div className="relative h-80 w-full overflow-hidden">
@@ -78,13 +80,19 @@ const Categories = () => {
                   alt={category.name}
                   className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-0 left-0 p-6">
+                    <h3 className="text-2xl font-bold uppercase text-white mb-1">{category.name}</h3>
+                    <p className="text-white/80 mb-4">{category.description}</p>
+                  </div>
+                </div>
               </div>
-              <div className="p-8 flex flex-col items-start">
-                <h3 className="text-2xl font-semibold mb-2">{category.name}</h3>
+              <div className="p-6 flex flex-col items-start">
+                <h3 className="text-2xl font-bold uppercase mb-2">{category.name}</h3>
                 <p className="text-muted-foreground mb-4">{category.description}</p>
                 <Button 
                   variant="ghost" 
-                  className="group flex items-center gap-1 text-primary hover:text-primary/90 pl-0"
+                  className="group flex items-center gap-1 text-primary hover:text-primary/80 pl-0 uppercase font-medium"
                 >
                   Explorar
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />

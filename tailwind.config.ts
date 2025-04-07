@@ -99,6 +99,13 @@ export default {
                     700: '#3a4661',
                     800: '#273045',
                     900: '#171d2a',
+                },
+                nike: {
+                    red: '#f5222d',
+                    black: '#111111',
+                    white: '#ffffff',
+                    gray: '#f5f5f5',
+                    darkgray: '#767676',
                 }
 			},
 			borderRadius: {
