@@ -1,22 +1,39 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Search } from "lucide-react";
+import { Menu, X, User, LogIn, LogOut } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // Mock authentication state
 
   const toggleMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const handleLogin = () => {
+    // Mock login functionality
+    setIsLoggedIn(true);
+  };
+
+  const handleLogout = () => {
+    // Mock logout functionality
+    setIsLoggedIn(false);
   };
 
   const navLinks = [
     { name: "Inicio", path: "/" },
     { name: "Categorías", path: "/categorias" },
     { name: "Ofertas", path: "/ofertas" },
-    { name: "Buscador", path: "/resultados" },
   ];
 
   return (
@@ -42,6 +59,45 @@ export default function Navbar() {
                 </Link>
               ))}
             </div>
+            
+            {/* Profile dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon" className="rounded-full">
+                  <User className="h-5 w-5" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-56">
+                {isLoggedIn ? (
+                  <>
+                    <DropdownMenuItem>
+                      <User className="mr-2 h-4 w-4" />
+                      <span>Mi Perfil</span>
+                    </DropdownMenuItem>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem onClick={handleLogout}>
+                      <LogOut className="mr-2 h-4 w-4" />
+                      <span>Cerrar sesión</span>
+                    </DropdownMenuItem>
+                  </>
+                ) : (
+                  <>
+                    <DropdownMenuItem onClick={handleLogin}>
+                      <LogIn className="mr-2 h-4 w-4" />
+                      <span>Iniciar sesión</span>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem onClick={handleLogin}>
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="mr-2 h-4 w-4" />
+                      <span>Continuar con Google</span>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem onClick={handleLogin}>
+                      <User className="mr-2 h-4 w-4" />
+                      <span>Crear cuenta</span>
+                    </DropdownMenuItem>
+                  </>
+                )}
+              </DropdownMenuContent>
+            </DropdownMenu>
             <ThemeToggle />
           </div>
 
@@ -79,6 +135,45 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
+            <div className="px-3 py-2">
+              {isLoggedIn ? (
+                <Button 
+                  variant="ghost" 
+                  className="w-full justify-start"
+                  onClick={handleLogout}
+                >
+                  <LogOut className="mr-2 h-4 w-4" />
+                  <span>Cerrar sesión</span>
+                </Button>
+              ) : (
+                <div className="space-y-2">
+                  <Button 
+                    variant="ghost" 
+                    className="w-full justify-start"
+                    onClick={handleLogin}
+                  >
+                    <LogIn className="mr-2 h-4 w-4" />
+                    <span>Iniciar sesión</span>
+                  </Button>
+                  <Button 
+                    variant="ghost" 
+                    className="w-full justify-start"
+                    onClick={handleLogin}
+                  >
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="mr-2 h-4 w-4" />
+                    <span>Continuar con Google</span>
+                  </Button>
+                  <Button 
+                    variant="ghost" 
+                    className="w-full justify-start"
+                    onClick={handleLogin}
+                  >
+                    <User className="mr-2 h-4 w-4" />
+                    <span>Crear cuenta</span>
+                  </Button>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       )}
