@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const Categories = () => {
   const navigate = useNavigate();
@@ -53,33 +54,41 @@ const Categories = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
+      
+      {/* Apple-style hero section */}
+      <div className="bg-background py-20 px-4 text-center">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">Categorías</h1>
+        <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+          Explore nuestra colección de tecnología de última generación, diseñada para mejorar tu vida diaria.
+        </p>
+      </div>
+      
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h1 className="text-3xl font-bold mb-8 text-center">Categorías</h1>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Apple-style category grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {categories.map((category) => (
             <div 
               key={category.id}
-              className="group overflow-hidden rounded-xl shadow-md hover-scale cursor-pointer"
+              className="group flex flex-col rounded-2xl overflow-hidden bg-card transition-all duration-300 hover:shadow-xl"
               onClick={() => handleCategoryClick(category.id)}
             >
-              <div className="relative h-60 w-full overflow-hidden">
+              <div className="relative h-80 w-full overflow-hidden">
                 <img 
                   src={category.image} 
                   alt={category.name}
-                  className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-4 text-white">
-                  <h3 className="text-xl font-semibold">{category.name}</h3>
-                  <p className="text-sm text-gray-200">{category.description}</p>
-                  <Button 
-                    className="mt-2 bg-primary/80 hover:bg-primary"
-                    size="sm"
-                  >
-                    Ver productos
-                  </Button>
-                </div>
+              </div>
+              <div className="p-8 flex flex-col items-start">
+                <h3 className="text-2xl font-semibold mb-2">{category.name}</h3>
+                <p className="text-muted-foreground mb-4">{category.description}</p>
+                <Button 
+                  variant="ghost" 
+                  className="group flex items-center gap-1 text-primary hover:text-primary/90 pl-0"
+                >
+                  Explorar
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Button>
               </div>
             </div>
           ))}

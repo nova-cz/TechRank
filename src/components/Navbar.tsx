@@ -73,7 +73,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-md border-b border-border">
+    <nav className="sticky top-0 z-50 w-full bg-background/90 backdrop-blur-xl border-b border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
@@ -84,19 +84,19 @@ export default function Navbar() {
 
           {/* Desktop navigation */}
           <div className="hidden md:flex items-center space-x-4">
-            <div className="flex space-x-4">
+            <div className="flex space-x-8">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   to={link.path}
-                  className="px-3 py-2 rounded-md text-sm font-medium text-foreground hover:text-primary transition-colors"
+                  className="px-3 py-2 text-sm font-medium text-foreground hover:text-primary transition-colors"
                 >
                   {link.name}
                 </Link>
               ))}
             </div>
             
-            {/* Profile dropdown */}
+            {/* Profile dropdown - Simplified */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon" className="rounded-full">
@@ -123,17 +123,6 @@ export default function Navbar() {
                         <span className="text-xs text-muted-foreground">{user.email}</span>
                       </div>
                     </div>
-                    <DropdownMenuSeparator />
-                    <DropdownMenuItem>
-                      <User className="mr-2 h-4 w-4" />
-                      <span>Mi Perfil</span>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem>
-                      <span>Mis Pedidos</span>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem>
-                      <span>Favoritos</span>
-                    </DropdownMenuItem>
                     <DropdownMenuSeparator />
                     <DropdownMenuItem onClick={handleLogout}>
                       <LogOut className="mr-2 h-4 w-4" />
@@ -200,7 +189,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile menu - Simplified */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-background/95 backdrop-blur-md">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
@@ -227,25 +216,6 @@ export default function Navbar() {
                       <span className="text-xs text-muted-foreground">{user.email}</span>
                     </div>
                   </div>
-                  <Button 
-                    variant="ghost" 
-                    className="w-full justify-start"
-                  >
-                    <User className="mr-2 h-4 w-4" />
-                    <span>Mi Perfil</span>
-                  </Button>
-                  <Button 
-                    variant="ghost" 
-                    className="w-full justify-start"
-                  >
-                    <span>Mis Pedidos</span>
-                  </Button>
-                  <Button 
-                    variant="ghost" 
-                    className="w-full justify-start"
-                  >
-                    <span>Favoritos</span>
-                  </Button>
                   <Button 
                     variant="ghost" 
                     className="w-full justify-start"
