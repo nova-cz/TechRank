@@ -11,7 +11,7 @@ function FeatureCard({ icon, title, description }: FeatureProps) {
   return (
     <div className="glass-card rounded-xl p-6 hover-scale shadow-md">
       <div className="flex flex-col items-center text-center space-y-4">
-        <div className="p-3 rounded-full bg-gradient-to-br from-techblue-500 to-techpurple-500 text-white">
+        <div className="p-3 rounded-full bg-gradient-to-br from-red-500 to-red-700 text-white">
           {icon}
         </div>
         <h3 className="text-xl font-semibold">{title}</h3>
