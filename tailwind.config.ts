@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -41,7 +42,7 @@ export default {
 					foreground: 'hsl(var(--muted-foreground))'
 				},
 				accent: {
-					DEFAULT: 'hsl(var(--nike-red-500))',
+					DEFAULT: 'hsl(var(--accent))',
 					foreground: 'hsl(var(--accent-foreground))'
 				},
 				popover: {
@@ -62,6 +63,7 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
+                // TechRank custom colors
                 techblue: {
                     50: '#e6f7ff',
                     100: '#b8e8ff',
@@ -99,18 +101,11 @@ export default {
                     900: '#171d2a',
                 },
                 nike: {
-                    red: {
-                        50: '#ffebee',
-                        100: '#ffcdd2',
-                        200: '#ef9a9a',
-                        300: '#e57373',
-                        400: '#ef5350',
-                        500: '#f44336',
-                        600: '#e53935',
-                        700: '#d32f2f',
-                        800: '#c62828',
-                        900: '#b71c1c',
-                    },
+                    red: '#f5222d',
+                    black: '#111111',
+                    white: '#ffffff',
+                    gray: '#f5f5f5',
+                    darkgray: '#767676',
                 }
 			},
 			borderRadius: {
