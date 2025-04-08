@@ -33,11 +33,6 @@ export default function Footer() {
                   Ofertas
                 </Link>
               </li>
-              <li>
-                <Link to="/contacto" className="text-muted-foreground hover:text-primary transition-colors">
-                  Contacto
-                </Link>
-              </li>
             </ul>
           </div>
           

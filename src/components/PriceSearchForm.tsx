@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Search } from "lucide-react";
@@ -34,14 +33,12 @@ export default function PriceSearchForm() {
     e.preventDefault();
     setIsSearching(true);
     
-    // Crear los parámetros de búsqueda para la URL
     const params = new URLSearchParams();
     if (minPrice) params.set("min", minPrice);
     if (maxPrice) params.set("max", maxPrice);
     if (category) params.set("category", category);
     params.set("currency", currency);
     
-    // Navegar a la página de resultados
     navigate(`/resultados?${params.toString()}`);
   };
 
@@ -60,7 +57,7 @@ export default function PriceSearchForm() {
                   id="minPrice"
                   type="number"
                   placeholder="0"
-                  className="pl-10"
+                  className="pl-10 tracking-wider"
                   value={minPrice}
                   onChange={(e) => setMinPrice(e.target.value)}
                 />
@@ -77,7 +74,7 @@ export default function PriceSearchForm() {
                   id="maxPrice"
                   type="number"
                   placeholder="50000"
-                  className="pl-10"
+                  className="pl-10 tracking-wider"
                   value={maxPrice}
                   onChange={(e) => setMaxPrice(e.target.value)}
                 />
