@@ -78,7 +78,7 @@
   }
 
   .glass-card {
-    @apply backdrop-blur-md bg-white/20 dark:bg-black/20 border border-white/10 dark:border-white/5;
+    @apply bg-white/90 dark:bg-black/90 border border-white/20 dark:border-white/10 shadow-lg;
   }
   
   .hover-scale {
@@ -90,7 +90,7 @@
   }
   
   .nike-button {
-    @apply bg-primary text-primary-foreground rounded-full px-6 py-2 font-medium transition-all hover:opacity-80 uppercase text-sm tracking-wider;
+    @apply bg-primary text-primary-foreground rounded-full px-6 py-2 font-bold transition-all hover:opacity-80 uppercase text-sm tracking-wider;
   }
   
   .nike-card {

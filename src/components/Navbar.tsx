@@ -1,57 +1,53 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, User, LogIn, LogOut, UserCircle } from "lucide-react";
+import { Menu, X, Mail, UserCircle } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoginMode, setIsLoginMode] = useState(true);
+  const [loginEmail, setLoginEmail] = useState("");
+  const [loginPassword, setLoginPassword] = useState("");
   const [user, setUser] = useState({
-    name: "Usuario",
-    email: "usuario@ejemplo.com",
-    avatar: "" // Empty string for default avatar
+    name: "",
+    email: "",
+    avatar: ""
   });
 
   const toggleMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
-  const handleLogin = () => {
+  const handleLogin = (e: React.FormEvent) => {
+    e.preventDefault();
     // Mock login functionality
     setIsLoggedIn(true);
     setUser({
-      name: "Juan Pérez",
-      email: "juan.perez@ejemplo.com",
-      avatar: "https://i.pravatar.cc/150?img=3" // Random avatar for demonstration
+      name: loginEmail.split('@')[0],
+      email: loginEmail,
+      avatar: "" // Empty string for default avatar
     });
   };
 
-  const handleGoogleLogin = () => {
-    // Mock Google login functionality
+  const handleSignup = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Mock signup functionality
     setIsLoggedIn(true);
     setUser({
-      name: "María González",
-      email: "maria.gonzalez@gmail.com",
-      avatar: "https://i.pravatar.cc/150?img=5" // Random avatar for demonstration
-    });
-  };
-
-  const handleCreateAccount = () => {
-    // Mock account creation
-    setIsLoggedIn(true);
-    setUser({
-      name: "Nuevo Usuario",
-      email: "nuevo.usuario@ejemplo.com",
+      name: loginEmail.split('@')[0],
+      email: loginEmail,
       avatar: "" // Empty string for default avatar
     });
   };
@@ -60,10 +56,12 @@ export default function Navbar() {
     // Mock logout functionality
     setIsLoggedIn(false);
     setUser({
-      name: "Usuario",
-      email: "usuario@ejemplo.com",
+      name: "",
+      email: "",
       avatar: ""
     });
+    setLoginEmail("");
+    setLoginPassword("");
   };
 
   const navLinks = [
@@ -89,7 +87,7 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   to={link.path}
-                  className="px-3 py-2 text-sm font-medium text-foreground hover:text-primary transition-colors"
+                  className="px-3 py-2 text-sm font-medium text-foreground hover:text-primary transition-colors uppercase tracking-wide"
                 >
                   {link.name}
                 </Link>
@@ -110,59 +108,70 @@ export default function Navbar() {
                   )}
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-56">
+              <DropdownMenuContent align="end" className="w-80 p-4">
                 {isLoggedIn ? (
-                  <>
-                    <div className="flex items-center gap-2 p-2">
-                      <Avatar className="h-8 w-8">
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-2">
+                      <Avatar className="h-12 w-12">
                         <AvatarImage src={user.avatar} alt={user.name} />
                         <AvatarFallback>{user.name.charAt(0)}</AvatarFallback>
                       </Avatar>
                       <div className="flex flex-col">
-                        <span className="text-sm font-medium">{user.name}</span>
+                        <span className="font-bold">{user.name}</span>
                         <span className="text-xs text-muted-foreground">{user.email}</span>
                       </div>
                     </div>
-                    <DropdownMenuSeparator />
-                    <DropdownMenuItem onClick={handleLogout}>
-                      <LogOut className="mr-2 h-4 w-4" />
-                      <span>Cerrar sesión</span>
-                    </DropdownMenuItem>
-                  </>
+                    <Button 
+                      variant="outline" 
+                      className="w-full"
+                      onClick={handleLogout}
+                    >
+                      Cerrar sesión
+                    </Button>
+                  </div>
                 ) : (
-                  <>
-                    <div className="p-3">
-                      <h4 className="text-sm font-semibold mb-2">Iniciar sesión</h4>
-                      <div className="space-y-2">
-                        <Button 
-                          onClick={handleLogin} 
-                          variant="outline" 
-                          className="w-full justify-start"
-                        >
-                          <LogIn className="mr-2 h-4 w-4" />
-                          <span>Con email y contraseña</span>
-                        </Button>
-                        <Button 
-                          onClick={handleGoogleLogin} 
-                          variant="outline" 
-                          className="w-full justify-start"
-                        >
-                          <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="mr-2 h-4 w-4" />
-                          <span>Continuar con Google</span>
-                        </Button>
-                      </div>
-                      <DropdownMenuSeparator className="my-2" />
-                      <p className="text-xs text-center text-muted-foreground mb-2">¿No tienes una cuenta?</p>
-                      <Button 
-                        onClick={handleCreateAccount} 
-                        variant="default" 
-                        className="w-full"
-                      >
-                        <User className="mr-2 h-4 w-4" />
-                        <span>Crear cuenta</span>
-                      </Button>
+                  <form onSubmit={isLoginMode ? handleLogin : handleSignup} className="space-y-4">
+                    <h2 className="text-lg font-bold">{isLoginMode ? "Iniciar sesión" : "Crear cuenta"}</h2>
+                    
+                    <div className="space-y-2">
+                      <Label htmlFor="email">Correo electrónico</Label>
+                      <Input 
+                        id="email" 
+                        type="email" 
+                        placeholder="tu@correo.com" 
+                        required
+                        value={loginEmail}
+                        onChange={(e) => setLoginEmail(e.target.value)}
+                      />
                     </div>
-                  </>
+                    
+                    <div className="space-y-2">
+                      <Label htmlFor="password">Contraseña</Label>
+                      <Input 
+                        id="password" 
+                        type="password" 
+                        placeholder="********" 
+                        required
+                        value={loginPassword}
+                        onChange={(e) => setLoginPassword(e.target.value)}
+                      />
+                    </div>
+                    
+                    <Button type="submit" variant="accent" className="w-full">
+                      <Mail className="mr-2 h-4 w-4" />
+                      {isLoginMode ? "Iniciar sesión" : "Crear cuenta"}
+                    </Button>
+                    
+                    <div className="text-center">
+                      <button 
+                        type="button"
+                        onClick={() => setIsLoginMode(!isLoginMode)} 
+                        className="text-sm text-primary hover:underline"
+                      >
+                        {isLoginMode ? "¿No tienes una cuenta? Crear cuenta" : "¿Ya tienes una cuenta? Iniciar sesión"}
+                      </button>
+                    </div>
+                  </form>
                 )}
               </DropdownMenuContent>
             </DropdownMenu>
@@ -189,7 +198,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu - Simplified */}
+      {/* Mobile menu */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-background/95 backdrop-blur-md">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
@@ -197,65 +206,78 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 to={link.path}
-                className="block px-3 py-2 rounded-md text-base font-medium text-foreground hover:text-primary transition-colors"
+                className="block px-3 py-2 rounded-md text-base font-medium text-foreground hover:text-primary transition-colors uppercase tracking-wide"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.name}
               </Link>
             ))}
-            <div className="px-3 py-2">
+            
+            {/* Mobile login/profile */}
+            <div className="mt-4 px-3 py-4 border-t border-border">
               {isLoggedIn ? (
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2 p-2">
-                    <Avatar className="h-8 w-8">
+                <div className="space-y-4">
+                  <div className="flex items-center gap-2">
+                    <Avatar className="h-12 w-12">
                       <AvatarImage src={user.avatar} alt={user.name} />
                       <AvatarFallback>{user.name.charAt(0)}</AvatarFallback>
                     </Avatar>
                     <div className="flex flex-col">
-                      <span className="text-sm font-medium">{user.name}</span>
+                      <span className="font-bold">{user.name}</span>
                       <span className="text-xs text-muted-foreground">{user.email}</span>
                     </div>
                   </div>
                   <Button 
-                    variant="ghost" 
-                    className="w-full justify-start"
+                    variant="outline" 
+                    className="w-full"
                     onClick={handleLogout}
                   >
-                    <LogOut className="mr-2 h-4 w-4" />
-                    <span>Cerrar sesión</span>
+                    Cerrar sesión
                   </Button>
                 </div>
               ) : (
-                <div className="space-y-2">
-                  <h4 className="text-sm font-semibold mb-2">Iniciar sesión</h4>
-                  <Button 
-                    variant="outline" 
-                    className="w-full justify-start"
-                    onClick={handleLogin}
-                  >
-                    <LogIn className="mr-2 h-4 w-4" />
-                    <span>Con email y contraseña</span>
-                  </Button>
-                  <Button 
-                    variant="outline" 
-                    className="w-full justify-start"
-                    onClick={handleGoogleLogin}
-                  >
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="mr-2 h-4 w-4" />
-                    <span>Continuar con Google</span>
-                  </Button>
-                  <div className="py-2">
-                    <p className="text-xs text-center text-muted-foreground mb-2">¿No tienes una cuenta?</p>
-                    <Button 
-                      variant="default" 
-                      className="w-full"
-                      onClick={handleCreateAccount}
-                    >
-                      <User className="mr-2 h-4 w-4" />
-                      <span>Crear cuenta</span>
-                    </Button>
+                <form onSubmit={isLoginMode ? handleLogin : handleSignup} className="space-y-4">
+                  <h2 className="text-lg font-bold">{isLoginMode ? "Iniciar sesión" : "Crear cuenta"}</h2>
+                  
+                  <div className="space-y-2">
+                    <Label htmlFor="m-email">Correo electrónico</Label>
+                    <Input 
+                      id="m-email" 
+                      type="email" 
+                      placeholder="tu@correo.com" 
+                      required
+                      value={loginEmail}
+                      onChange={(e) => setLoginEmail(e.target.value)}
+                    />
                   </div>
-                </div>
+                  
+                  <div className="space-y-2">
+                    <Label htmlFor="m-password">Contraseña</Label>
+                    <Input 
+                      id="m-password" 
+                      type="password" 
+                      placeholder="********" 
+                      required
+                      value={loginPassword}
+                      onChange={(e) => setLoginPassword(e.target.value)}
+                    />
+                  </div>
+                  
+                  <Button type="submit" variant="accent" className="w-full">
+                    <Mail className="mr-2 h-4 w-4" />
+                    {isLoginMode ? "Iniciar sesión" : "Crear cuenta"}
+                  </Button>
+                  
+                  <div className="text-center">
+                    <button 
+                      type="button"
+                      onClick={() => setIsLoginMode(!isLoginMode)} 
+                      className="text-sm text-primary hover:underline"
+                    >
+                      {isLoginMode ? "¿No tienes una cuenta? Crear cuenta" : "¿Ya tienes una cuenta? Iniciar sesión"}
+                    </button>
+                  </div>
+                </form>
               )}
             </div>
           </div>

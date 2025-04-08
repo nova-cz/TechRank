@@ -60,7 +60,7 @@ export default function PriceSearchForm() {
                   id="minPrice"
                   type="number"
                   placeholder="0"
-                  className="pl-8"
+                  className="pl-10"
                   value={minPrice}
                   onChange={(e) => setMinPrice(e.target.value)}
                 />
@@ -77,7 +77,7 @@ export default function PriceSearchForm() {
                   id="maxPrice"
                   type="number"
                   placeholder="50000"
-                  className="pl-8"
+                  className="pl-10"
                   value={maxPrice}
                   onChange={(e) => setMaxPrice(e.target.value)}
                 />
@@ -118,7 +118,7 @@ export default function PriceSearchForm() {
           
           <Button 
             type="submit" 
-            className="w-full md:w-auto bg-gradient-to-r from-techblue-500 to-techpurple-500 hover:from-techblue-600 hover:to-techpurple-600"
+            className="w-full md:w-auto bg-accent hover:bg-accent/90"
             disabled={isSearching}
           >
             {isSearching ? (
