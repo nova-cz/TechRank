@@ -1,0 +1,316 @@
+Formato usado 
+nombre
+precio 
+link 
+imagen 
+
+
+
+Dell Laptop Inspiron 3535 15.6"
+$7,847.00
+https://www.amazon.com.mx/Dell-Inspiron-2-80GHz-Windows-Espa%C3%B1ol/dp/B09V1RT5LZ/ref=sr_1_2?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB1A3ejtbGjlUA2nRvSlw6_WkSSZMatDRakWRPNUJP8tbwFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81
+im1.jpg
+
+
+
+2021 Apple MacBook Pro (de 16 Pulgadas, Chip M1 MAX de Apple con CPU de 10 núcleos y GPU de 32 núcleos, 32 GB RAM, 1 TB SSD) - Gris Espacial
+$93,999.01
+https://www.amazon.com.mx/Apple-MacBook-Pulgadas-10-n%C3%BAcleos-32-n%C3%BAcleos/dp/B09JRCFK57/ref=sr_1_1_sspa?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB14Y1gQd0L3l67DRs6o-Jv_6EQkNC0GONsDvQ5U7u1evUFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81hCU5JJjXqhO8yTHzsffOBuylgVwBX8.fUuPSdpMkJdprDl8GNjESErURPbuebYk2Ok96-kSVKY&dib_tag=se&keywords=computadoras&qid=1747507622&sprefix=computadoras%2B%2Caps%2C162&sr=8-1-spons&ufe=app_do%3Aamzn1.fos.666fddd9-7345-4183-b0a8-29250f70baf9&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1
+im2.jpg
+
+
+MSI Laptop Gaming Titan Dragon Edition Norse Myth A2XWJG-627MX Intel Core Ultra 9 285HX NVIDIA GeForce RTX5090 64GB RAM 6TB SSD 18" 16:10 UHD+MiniLED 120Hz/Teclado en español/2 años de garantía
+$182,499.00
+https://www.amazon.com.mx/MSI-Laptop-A2XWJG-627MX-GeForce-RTX5090/dp/B0DTPZMFK5/ref=sr_1_2_sspa?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB14Y1gQd0L3l67DRs6o-Jv_6EQkNC0GONsDvQ5U7u1evUFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81hCU5JJjXqhO8yTHzsffOBuylgVwBX8.fUuPSdpMkJdprDl8GNjESErURPbuebYk2Ok96-kSVKY&dib_tag=se&keywords=computadoras&qid=1747507622&sprefix=computadoras+%2Caps%2C162&sr=8-2-spons&ufe=app_do%3Aamzn1.fos.de93fa6a-174c-4df7-be7c-5bc8e9c5a71b&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1
+im3.jpg
+
+
+
+HP All In One, Intel Celeron N100 (12va Gen), 8GB Ram Ddr5, 128Gb M.2, 21.5 Fhd, Windows 11 Home, Computadora De Escritorio con Teclado En Español, Garantía en México 1 año.
+$6,749.00
+https://www.amazon.com.mx/HP-Celeron-Computadora-Escritorio-Garant%C3%ADa/dp/B0D8LJJBBY/ref=sr_1_5?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB14Y1gQd0L3l67DRs6o-Jv_6EQkNC0GONsDvQ5U7u1evUFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81hCU5JJjXqhO8yTHzsffOBuylgVwBX8.fUuPSdpMkJdprDl8GNjESErURPbuebYk2Ok96-kSVKY&dib_tag=se&keywords=computadoras&qid=1747507622&sprefix=computadoras+%2Caps%2C162&sr=8-5&ufe=app_do%3Aamzn1.fos.de93fa6a-174c-4df7-be7c-5bc8e9c5a71b
+im4.jpg
+
+
+ASUS Laptop Vivobook Go 14
+$8,499.00
+https://www.amazon.com.mx/ASUS-Vivobook-E1404FA-NK480W-5-7520U-Servicio/dp/B0D6P47B38/ref=sr_1_6?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB14Y1gQd0L3l67DRs6o-Jv_6EQkNC0GONsDvQ5U7u1evUFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81hCU5JJjXqhO8yTHzsffOBuylgVwBX8.fUuPSdpMkJdprDl8GNjESErURPbuebYk2Ok96-kSVKY&dib_tag=se&keywords=computadoras&qid=1747507622&sprefix=computadoras+%2Caps%2C162&sr=8-6&ufe=app_do%3Aamzn1.fos.709e624a-cf89-43d6-ada3-7117189c8ad8
+im5.jpg
+
+
+HP ProBook 450 G3 Portátil de 15.6", 6th Gen Dual Core i3-6100 3.70 GHz, 16GB RAM, 256GB SSD, Lector de Huellas Dactilares, HDMI, VGA, Windows 10 Pro (reacondicionado)
+$3,250.00
+https://www.amazon.com.mx/HP-ProBook-450-G3-reacondicionado/dp/B0DQTQ8VCB/ref=sr_1_7?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB14Y1gQd0L3l67DRs6o-Jv_6EQkNC0GONsDvQ5U7u1evUFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81hCU5JJjXqhO8yTHzsffOBuylgVwBX8.fUuPSdpMkJdprDl8GNjESErURPbuebYk2Ok96-kSVKY&dib_tag=se&keywords=computadoras&qid=1747507622&sprefix=computadoras%2B%2Caps%2C162&sr=8-7&th=1
+im6.jpg
+
+
+
+HP Probook 640 G5 Computadora Portátil FHD de 14 Pulgadas, Intel Core i5-8365U, 16 GB DDR4 RAM, 512 GB SSD, Lector de Huellas Dactilares, Teclado Retroiluminado, HDMI, Windows 10 Pro (Renovado)
+$4,455.00
+https://www.amazon.com.mx/HP-640-G5-Computadora-Retroiluminado/dp/B0F43N3TL3/ref=sr_1_8?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB14Y1gQd0L3l67DRs6o-Jv_6EQkNC0GONsDvQ5U7u1evUFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81hCU5JJjXqhO8yTHzsffOBuylgVwBX8.fUuPSdpMkJdprDl8GNjESErURPbuebYk2Ok96-kSVKY&dib_tag=se&keywords=computadoras&qid=1747507622&sprefix=computadoras+%2Caps%2C162&sr=8-8
+im7.jpg
+
+
+HP ProOne 245 G10 All-in-One 23.8", AMD Athlon Silver 7120U, 4GB Ram, 128GB SSD, Windows 11 Home, Negro, Teclado en español.
+$5,198.00
+https://www.amazon.com.mx/HP-245-Windows-Teclado-espa%C3%B1ol/dp/B0DS2VQQZW/ref=sr_1_10?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB14Y1gQd0L3l67DRs6o-Jv_6EQkNC0GONsDvQ5U7u1evUFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81hCU5JJjXqhO8yTHzsffOBuylgVwBX8.fUuPSdpMkJdprDl8GNjESErURPbuebYk2Ok96-kSVKY&dib_tag=se&keywords=computadoras&qid=1747507622&sprefix=computadoras+%2Caps%2C162&sr=8-10&ufe=app_do%3Aamzn1.fos.de93fa6a-174c-4df7-be7c-5bc8e9c5a71b
+im8.jpg
+
+
+
+Acer Laptop Aspire Lite 16" WUXGA Core i7 12va 10 Núcleos | Panel IPS | 16GB RAM | 512GB SSD | Intel HD Graphics | Garantia en México
+$19,799.10
+https://www.amazon.com.mx/Acer-Laptop-N%C3%BAcleos-Graphics-Garantia/dp/B0D6C681Y9/ref=sr_1_12?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB14Y1gQd0L3l67DRs6o-Jv_6EQkNC0GONsDvQ5U7u1evUFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81hCU5JJjXqhO8yTHzsffOBuylgVwBX8.fUuPSdpMkJdprDl8GNjESErURPbuebYk2Ok96-kSVKY&dib_tag=se&keywords=computadoras&qid=1747507622&sprefix=computadoras%2B%2Caps%2C162&sr=8-12&ufe=app_do%3Aamzn1.fos.709e624a-cf89-43d6-ada3-7117189c8ad8&th=1
+im9.jpg
+
+
+Acer Laptop Aspire Lite 14" WUXGA Core i3 12th 8GB RAM 512GB SSD | Panel IPS | Webcam FHD 1920x1080 | Garantía en México Directamente 1 año de Seguro contra Robo Directo
+$7,179.47
+https://www.amazon.com.mx/Celeron-n%C3%BAcleos-Graphics-Garant%C3%ADa-Windows/dp/B0DKRMT87D/ref=sr_1_13?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB14Y1gQd0L3l67DRs6o-Jv_6EQkNC0GONsDvQ5U7u1evUFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81hCU5JJjXqhO8yTHzsffOBuylgVwBX8.fUuPSdpMkJdprDl8GNjESErURPbuebYk2Ok96-kSVKY&dib_tag=se&keywords=computadoras&qid=1747507622&sprefix=computadoras%2B%2Caps%2C162&sr=8-13&ufe=app_do%3Aamzn1.fos.709e624a-cf89-43d6-ada3-7117189c8ad8&th=1
+im10.jpg
+
+
+
+MSI (Renewed Premium) GF63 Thin Gaming Core i5-12450H 512GB SSD 8GB 15.6" (1920x1080) 144Hz, WIN11 NVIDIA RTX 4050
+$16,849.09
+https://www.amazon.com.mx/MSI-Renewed-Premium-i5-12450H-1920x1080/dp/B0D7CFQ4J3/ref=sr_1_14?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB14Y1gQd0L3l67DRs6o-Jv_6EQkNC0GONsDvQ5U7u1evUFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81hCU5JJjXqhO8yTHzsffOBuylgVwBX8.fUuPSdpMkJdprDl8GNjESErURPbuebYk2Ok96-kSVKY&dib_tag=se&keywords=computadoras&qid=1747507622&sprefix=computadoras+%2Caps%2C162&sr=8-14
+im11.jpg
+
+
+Dell Inspiron - Computadora todo en uno con pantalla táctil, 23.8 pulgadas FHD, Intel Core i7-1355U, 32 GB RAM, SSD PCIe de 1 TB, Windows 11 Home
+$34,990.00
+https://www.amazon.com.mx/Dell-Inspiron-computadora-visualizaci%C3%B3n-pulgadas/dp/B0CNYDWKBG/ref=sr_1_18?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB14Y1gQd0L3l67DRs6o-Jv_6EQkNC0GONsDvQ5U7u1evUFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81hCU5JJjXqhO8yTHzsffOBuylgVwBX8.fUuPSdpMkJdprDl8GNjESErURPbuebYk2Ok96-kSVKY&dib_tag=se&keywords=computadoras&qid=1747507622&sprefix=computadoras%2B%2Caps%2C162&sr=8-18&ufe=app_do%3Aamzn1.fos.de93fa6a-174c-4df7-be7c-5bc8e9c5a71b&th=1
+im12.jpg
+
+
+
+
+MSI Laptop Gaming Titan 18 HX AI A2XWJG-256MX Intel Core Ultra 9 285HX NVIDIA GeForce RTX5090 64GB RAM 4TB SSD 18" 16:10 UHD+MiniLED 120Hz/Teclado en español/2 años de garantía
+$169,999.00
+https://www.amazon.com.mx/MSI-Laptop-A2XWJG-256MX-GeForce-RTX5090/dp/B0F22MYS1P/ref=sr_1_21_sspa?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB14Y1gQd0L3l67DRs6o-Jv_6EQkNC0GONsDvQ5U7u1evUFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81hCU5JJjXqhO8yTHzsffOBuylgVwBX8.fUuPSdpMkJdprDl8GNjESErURPbuebYk2Ok96-kSVKY&dib_tag=se&keywords=computadoras&qid=1747507622&sprefix=computadoras+%2Caps%2C162&sr=8-21-spons&ufe=app_do%3Aamzn1.fos.de93fa6a-174c-4df7-be7c-5bc8e9c5a71b&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1
+im13.jpg
+
+
+MSI Laptop Thin & Light Modern 14 C7M-408MX Ryzen 7 7730U AMD Radeon Graphics 16GB RAM 512GB SSD 14" FHD 60Hz Negra,Teclado en español/2 años de garantía
+$15,999.00
+https://www.amazon.com.mx/MSI-C7M-408MX-Graphics-Teclado-garant%C3%ADa/dp/B0F1DR1RPW/ref=sr_1_22_sspa?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB14Y1gQd0L3l67DRs6o-Jv_6EQkNC0GONsDvQ5U7u1evUFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81hCU5JJjXqhO8yTHzsffOBuylgVwBX8.fUuPSdpMkJdprDl8GNjESErURPbuebYk2Ok96-kSVKY&dib_tag=se&keywords=computadoras&qid=1747507622&sprefix=computadoras+%2Caps%2C162&sr=8-22-spons&ufe=app_do%3Aamzn1.fos.bd54a2f1-c88a-49ad-aa79-ef91b4e627db&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1
+im14.jpg
+
+
+Laptop Evolve Maestro E-Book 11.6” LTE 4G Intel Celeron Ram 4GB eMMC 64GB W10
+$2,699.00
+https://www.amazon.com.mx/Laptop-Evolve-Maestro-Book-Celeron/dp/B096PRGTDT/ref=sr_1_25?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB14Y1gQd0L3l67DRs6o-Jv_6EQkNC0GONsDvQ5U7u1evUFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81hCU5JJjXqhO8yTHzsffOBuylgVwBX8.fUuPSdpMkJdprDl8GNjESErURPbuebYk2Ok96-kSVKY&dib_tag=se&keywords=computadoras&qid=1747507622&sprefix=computadoras+%2Caps%2C162&sr=8-25&ufe=app_do%3Aamzn1.fos.f8482e9e-0ec5-4234-96bf-85e3a898b5f5
+im15.jpg
+
+
+Dell Inspiron 15 3520: Procesador Intel Core i5 1235U, RAM 8GB DDR4, SSD 512GB, Pantalla de 15.6" LED, Video Iris Xe Graphics, S.O. Windows 11 Home (64 bits)
+$10,399.00
+https://www.amazon.com.mx/Dell-Inspiron-15-3520-Procesador/dp/B0CKFL2SJJ/ref=sr_1_27?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB14Y1gQd0L3l67DRs6o-Jv_6EQkNC0GONsDvQ5U7u1evUFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81hCU5JJjXqhO8yTHzsffOBuylgVwBX8.fUuPSdpMkJdprDl8GNjESErURPbuebYk2Ok96-kSVKY&dib_tag=se&keywords=computadoras&qid=1747507622&sprefix=computadoras+%2Caps%2C162&sr=8-27&ufe=app_do%3Aamzn1.fos.de93fa6a-174c-4df7-be7c-5bc8e9c5a71b
+iml6.jpg
+
+
+HP Laptop 15-fc0080la, AMD Ryzen 7, 16 GB, 512 GB SSD, 15.6, HD, Windows 11 Home, Teclado en Español, Garantía México, Plateado | Microsoft 365 Personal 12 Meses + Curso Multilenguajes
+$12,999.00
+https://www.amazon.com.mx/HP-15-fc0080la-Garant%C3%ADa-Microsoft-Multilenguajes/dp/B0DHHNXCSP/ref=sr_1_28?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB14Y1gQd0L3l67DRs6o-Jv_6EQkNC0GONsDvQ5U7u1evUFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81hCU5JJjXqhO8yTHzsffOBuylgVwBX8.fUuPSdpMkJdprDl8GNjESErURPbuebYk2Ok96-kSVKY&dib_tag=se&keywords=computadoras&qid=1747507622&sprefix=computadoras%2B%2Caps%2C162&sr=8-28&ufe=app_do%3Aamzn1.fos.de93fa6a-174c-4df7-be7c-5bc8e9c5a71b&th=1
+im17.jpg
+
+
+
+ASUS Laptop Vivobook 2024/D1605YA/AMD Ryzen 7 Serie 7000/16GB RAM/512GB SSD/Pantalla F-HD 16"/Resistencia Grado Militar/Antibacterial Guard/Apertura 180°/Teclado en Español (Garantía México)
+$14,199.00
+https://www.amazon.com.mx/ASUS-Vivobook-Pantalla-Resistencia-Antibacterial/dp/B0CY398N56/ref=sr_1_34?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB14Y1gQd0L3l67DRs6o-Jv_6EQkNC0GONsDvQ5U7u1evUFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81hCU5JJjXqhO8yTHzsffOBuylgVwBX8.fUuPSdpMkJdprDl8GNjESErURPbuebYk2Ok96-kSVKY&dib_tag=se&keywords=computadoras&qid=1747507622&sprefix=computadoras%2B%2Caps%2C162&sr=8-34&ufe=app_do%3Aamzn1.fos.709e624a-cf89-43d6-ada3-7117189c8ad8&th=1
+im18.jpg
+
+
+DELL Laptop Inspiron 3520 15.6 FHD Core i7-1255U 16GB 1 TB SSD Iris® Xe Graphics McAfee +Premium 12M
+$17,499.00
+https://www.amazon.com.mx/Dell-Inspiron-i7-1255U-Graphics-Premium/dp/B0D737VJD4/ref=sr_1_37?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB14Y1gQd0L3l67DRs6o-Jv_6EQkNC0GONsDvQ5U7u1evUFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81hCU5JJjXqhO8yTHzsffOBuylgVwBX8.fUuPSdpMkJdprDl8GNjESErURPbuebYk2Ok96-kSVKY&dib_tag=se&keywords=computadoras&qid=1747507622&sprefix=computadoras%2B%2Caps%2C162&sr=8-37&ufe=app_do%3Aamzn1.fos.709e624a-cf89-43d6-ada3-7117189c8ad8&th=1
+im19.jpg
+
+
+Acer Laptop Ryzen5 Aspire 3 Modelo 2024 | AMD R5-7520U, 4 Núcleos | 8GB RAM | 512GB SSD | Panel de 15.6" FHD | AMD Radeon Graphic | Garantía en México | Windows 11
+$8,999.00
+https://www.amazon.com.mx/Acer-R5-7520U-N%C3%BAcleos-Graphic-Garant%C3%ADa/dp/B0D9353JMJ/ref=sr_1_39?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB14Y1gQd0L3l67DRs6o-Jv_6EQkNC0GONsDvQ5U7u1evUFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81hCU5JJjXqhO8yTHzsffOBuylgVwBX8.fUuPSdpMkJdprDl8GNjESErURPbuebYk2Ok96-kSVKY&dib_tag=se&keywords=computadoras&qid=1747507622&sprefix=computadoras+%2Caps%2C162&sr=8-39&ufe=app_do%3Aamzn1.fos.709e624a-cf89-43d6-ada3-7117189c8ad8
+im20.jpg
+
+
+
+HP Laptop Pavilion x360 14-ek0010la, Intel Core i3, 8 GB RAM, 512 GB SSD, FHD, 14", Táctil, Windows 11 Home, Teclado en Español, Garantía México, Plateado
+$10,847.77
+https://www.amazon.com.mx/HP-Pavilion-14-ek0010la-Garant%C3%ADa-Plateado/dp/B0D49ZTLHX/ref=sr_1_40?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB14Y1gQd0L3l67DRs6o-Jv_6EQkNC0GONsDvQ5U7u1evUFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81hCU5JJjXqhO8yTHzsffOBuylgVwBX8.fUuPSdpMkJdprDl8GNjESErURPbuebYk2Ok96-kSVKY&dib_tag=se&keywords=computadoras&qid=1747507622&sprefix=computadoras%2B%2Caps%2C162&sr=8-40&ufe=app_do%3Aamzn1.fos.de93fa6a-174c-4df7-be7c-5bc8e9c5a71b&th=1
+im21.jpg
+
+
+
+ASUS Laptop Chromebook CX1500 | Intel Celeron 8GB RAM 128 GB | (Garantía y Servicio en México)
+$7,499.00
+https://www.amazon.com.mx/ASUS-Chromebook-CX1500C-Teclado-Garant%C3%ADa/dp/B0CP8DV1FH/ref=sr_1_41?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB14Y1gQd0L3l67DRs6o-Jv_6EQkNC0GONsDvQ5U7u1evUFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81hCU5JJjXqhO8yTHzsffOBuylgVwBX8.fUuPSdpMkJdprDl8GNjESErURPbuebYk2Ok96-kSVKY&dib_tag=se&keywords=computadoras&qid=1747507622&sprefix=computadoras%2B%2Caps%2C162&sr=8-41&ufe=app_do%3Aamzn1.fos.709e624a-cf89-43d6-ada3-7117189c8ad8&th=1
+im22.jpg
+
+
+Lenovo L13 Yoga ThinkPad Computadora portátil, 13.3" Full HD con Pantalla táctil, Intel Core i5-10310, 16 GB RAM, 256 GB SSD, Lector de Huellas Dactilares, Stylus, HDMI, Windows 10 Pro (renovado)
+$5,950.70
+https://www.amazon.com.mx/Lenovo-L13-Yoga-ThinkPad-Computadora/dp/B0DP9H6PNH/ref=sr_1_42?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB14Y1gQd0L3l67DRs6o-Jv_6EQkNC0GONsDvQ5U7u1evUFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81hCU5JJjXqhO8yTHzsffOBuylgVwBX8.fUuPSdpMkJdprDl8GNjESErURPbuebYk2Ok96-kSVKY&dib_tag=se&keywords=computadoras&qid=1747507622&sprefix=computadoras+%2Caps%2C162&sr=8-42&ufe=app_do%3Aamzn1.fos.de93fa6a-174c-4df7-be7c-5bc8e9c5a71b
+im23.jpg
+
+
+
+ASUS Laptop Vivobook 14/14" FHD/Intel Core i5 12va 10 núcleos/8GB RAM/512GB SSD/Cámara HD con Escudo de Privacidad/Teclado en Español(Garantía y Servio en México)
+$8,999.00
+https://www.amazon.com.mx/ASUS-Vivobook-n%C3%BAcleos-Privacidad-Garant%C3%ADa/dp/B0DXFYHG9V/ref=sr_1_43?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB14Y1gQd0L3l67DRs6o-Jv_6EQkNC0GONsDvQ5U7u1evUFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81hCU5JJjXqhO8yTHzsffOBuylgVwBX8.fUuPSdpMkJdprDl8GNjESErURPbuebYk2Ok96-kSVKY&dib_tag=se&keywords=computadoras&qid=1747507622&sprefix=computadoras+%2Caps%2C162&sr=8-43&ufe=app_do%3Aamzn1.fos.709e624a-cf89-43d6-ada3-7117189c8ad8
+im24.jpg
+
+
+
+
+Dell 5420 Latitude Laptop FHD de 14" Negocio computadora portátil, Quad Core 11th Gen, 8GB de RAM DDR4, SSD de 256GB, Cámara, HDMI, Thunderbolt, WiFi, BT, Windows 10 Pro (Renovado)
+$4,999.00
+https://www.amazon.com.mx/Dell-5420-computadora-port%C3%A1til-Thunderbolt/dp/B0D6FWK44S/ref=sr_1_52?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IZ66T0EUR1YM&dib=eyJ2IjoiMSJ9.6qArdgR2ZhNf-DLslwc5Mwmk_rxZBCpfpgwEq2y1_8CF5iFWgvgF7CDjlMH6i8od_TRzV6bKEpLUm7uwoQ3TA9GTgp0wWyVVxwZhvmI8A3aa9fQnDKmiU_VdFdXTnZb9xQUo9gUD-Wmjd4INKukijeEZrg9wJ9dan7DFgCzD3a99DMsEpJydaGx-uIoA2EB14Y1gQd0L3l67DRs6o-Jv_6EQkNC0GONsDvQ5U7u1evUFLW61mzAfVk7RcU7k8uyk8w9cEf_O7yy81hCU5JJjXqhO8yTHzsffOBuylgVwBX8.fUuPSdpMkJdprDl8GNjESErURPbuebYk2Ok96-kSVKY&dib_tag=se&keywords=computadoras&qid=1747507622&sprefix=computadoras+%2Caps%2C162&sr=8-52
+im25.jpg
+
+
+MacBook Air de 13 Pulgadas: Chip M3 de Apple con CPU de 8 núcleos y GPU de 8 núcleos, 256 GB SSD - Azul Medianoche
+$21,374.05
+https://www.amazon.com.mx/MacBook-Air-13-Pulgadas-Medianoche/dp/B0DLHFZZ1L/ref=sr_1_2_sspa?crid=3993CWMOP7I97&dib=eyJ2IjoiMSJ9.cpfZ0OZDj3JaJhs3a99EsnzeKoeLkhfS-aHcIW-sAf6RCSUKUONcJCYukHsRIqfBCwWLPkrZ9eoeTQgWaW9Pz_BP8jcw4p2yYS76ROaK9-Vg7qmwAGZ3OBMV0hW1H2Ud1S-RRiMUdI9T0KdR9f3CqcbxsgkrtgrgTXma90LXQMCXRiSvBPBCCAafF5qV_y7ynx5APfgUVrNP-nIB4B0U2H97aSWVKS9CxFTB3us5CSLn9A9prgJlfCYMKF1_rd1GshNMGEutpIkLhjM92UOuCzcKEaI2gdrP9A9NDuDChgc.13KeYAYvbk6wryTG9iETw1UjrNK2Q7aZTz7xr8FzmWs&dib_tag=se&keywords=macbook&qid=1747510345&sprefix=mackboo%2Caps%2C161&sr=8-2-spons&ufe=app_do%3Aamzn1.fos.de93fa6a-174c-4df7-be7c-5bc8e9c5a71b&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1
+im26.jpg
+
+
+
+Apple 2024 MacBook Air (de 15 Pulgadas, Chip M3 de Apple con CPU de 8 núcleos y GPU de 10 núcleos, 16GB Memoria unificada, 512 GB) - Gris Espacial
+$33,999.00
+https://www.amazon.com.mx/Apple-MacBook-Pulgadas-n%C3%BAcleos-unificada/dp/B0CX253RHH/ref=sr_1_3_sspa?crid=3993CWMOP7I97&dib=eyJ2IjoiMSJ9.cpfZ0OZDj3JaJhs3a99EsnzeKoeLkhfS-aHcIW-sAf6RCSUKUONcJCYukHsRIqfBCwWLPkrZ9eoeTQgWaW9Pz_BP8jcw4p2yYS76ROaK9-Vg7qmwAGZ3OBMV0hW1H2Ud1S-RRiMUdI9T0KdR9f3CqcbxsgkrtgrgTXma90LXQMCXRiSvBPBCCAafF5qV_y7ynx5APfgUVrNP-nIB4B0U2H97aSWVKS9CxFTB3us5CSLn9A9prgJlfCYMKF1_rd1GshNMGEutpIkLhjM92UOuCzcKEaI2gdrP9A9NDuDChgc.13KeYAYvbk6wryTG9iETw1UjrNK2Q7aZTz7xr8FzmWs&dib_tag=se&keywords=macbook&qid=1747510345&sprefix=mackboo%2Caps%2C161&sr=8-3-spons&ufe=app_do%3Aamzn1.fos.de93fa6a-174c-4df7-be7c-5bc8e9c5a71b&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1
+im27.jpg
+
+
+Laptop MacBook Pro 2024 de Apple con Chip M4, CPU de 10 núcleos y GPU de 10 núcleos: Diseñada para Apple Intelligence, Pantalla de 14.2 Pulgadas, 16 GB de Memoria unificada, 512 GB - Plata
+$37,999.00
+https://www.amazon.com.mx/Laptop-MacBook-2024-Apple-n%C3%BAcleos/dp/B0DLHB6GTF/ref=sr_1_4_sspa?crid=3993CWMOP7I97&dib=eyJ2IjoiMSJ9.cpfZ0OZDj3JaJhs3a99EsnzeKoeLkhfS-aHcIW-sAf6RCSUKUONcJCYukHsRIqfBCwWLPkrZ9eoeTQgWaW9Pz_BP8jcw4p2yYS76ROaK9-Vg7qmwAGZ3OBMV0hW1H2Ud1S-RRiMUdI9T0KdR9f3CqcbxsgkrtgrgTXma90LXQMCXRiSvBPBCCAafF5qV_y7ynx5APfgUVrNP-nIB4B0U2H97aSWVKS9CxFTB3us5CSLn9A9prgJlfCYMKF1_rd1GshNMGEutpIkLhjM92UOuCzcKEaI2gdrP9A9NDuDChgc.13KeYAYvbk6wryTG9iETw1UjrNK2Q7aZTz7xr8FzmWs&dib_tag=se&keywords=macbook&qid=1747510345&sprefix=mackboo%2Caps%2C161&sr=8-4-spons&ufe=app_do%3Aamzn1.fos.de93fa6a-174c-4df7-be7c-5bc8e9c5a71b&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1
+im28.jpg
+
+
+
+2019 Apple MacBook Pro con 2.4GHz Intel Core i9 (16-pulgadas, 32GB RAM, 512GB SSD de Almacenamiento) (QWERTY English) Gris Espacial (Reacondicionado)
+$13,026.97
+https://www.amazon.com.mx/Apple-16-pulgadas-Almacenamiento-Espacial-Reacondicionado/dp/B0CN871VWH/ref=sr_1_5?crid=3993CWMOP7I97&dib=eyJ2IjoiMSJ9.cpfZ0OZDj3JaJhs3a99EsnzeKoeLkhfS-aHcIW-sAf6RCSUKUONcJCYukHsRIqfBCwWLPkrZ9eoeTQgWaW9Pz_BP8jcw4p2yYS76ROaK9-Vg7qmwAGZ3OBMV0hW1H2Ud1S-RRiMUdI9T0KdR9f3CqcbxsgkrtgrgTXma90LXQMCXRiSvBPBCCAafF5qV_y7ynx5APfgUVrNP-nIB4B0U2H97aSWVKS9CxFTB3us5CSLn9A9prgJlfCYMKF1_rd1GshNMGEutpIkLhjM92UOuCzcKEaI2gdrP9A9NDuDChgc.13KeYAYvbk6wryTG9iETw1UjrNK2Q7aZTz7xr8FzmWs&dib_tag=se&keywords=macbook&qid=1747510345&sprefix=mackboo%2Caps%2C161&sr=8-5
+im29.jpg
+
+
+Apple MacBook Air con chip Apple M1 (13 pulgadas, 8 GB de RAM, 512 GB de almacenamiento SSD) - Gris espacial (último modelo) (renovado)
+$10,895.34
+https://www.amazon.com.mx/Apple-MacBook-chip-pulgadas-almacenamiento/dp/B08T1NZMPN/ref=sr_1_6?crid=3993CWMOP7I97&dib=eyJ2IjoiMSJ9.cpfZ0OZDj3JaJhs3a99EsnzeKoeLkhfS-aHcIW-sAf6RCSUKUONcJCYukHsRIqfBCwWLPkrZ9eoeTQgWaW9Pz_BP8jcw4p2yYS76ROaK9-Vg7qmwAGZ3OBMV0hW1H2Ud1S-RRiMUdI9T0KdR9f3CqcbxsgkrtgrgTXma90LXQMCXRiSvBPBCCAafF5qV_y7ynx5APfgUVrNP-nIB4B0U2H97aSWVKS9CxFTB3us5CSLn9A9prgJlfCYMKF1_rd1GshNMGEutpIkLhjM92UOuCzcKEaI2gdrP9A9NDuDChgc.13KeYAYvbk6wryTG9iETw1UjrNK2Q7aZTz7xr8FzmWs&dib_tag=se&keywords=macbook&qid=1747510345&sprefix=mackboo%2Caps%2C161&sr=8-6&th=1
+im30.jpg
+
+
+MacBook Air de 13 Pulgadas: Chip M3 de Apple con CPU de 8 núcleos y GPU de 8 núcleos, 256 GB SSD - Azul Medianoche
+$21,374.05
+https://www.amazon.com.mx/MacBook-Air-13-Pulgadas-Medianoche/dp/B0DLHFZZ1L/ref=sr_1_9?crid=3993CWMOP7I97&dib=eyJ2IjoiMSJ9.cpfZ0OZDj3JaJhs3a99EsnzeKoeLkhfS-aHcIW-sAf6RCSUKUONcJCYukHsRIqfBCwWLPkrZ9eoeTQgWaW9Pz_BP8jcw4p2yYS76ROaK9-Vg7qmwAGZ3OBMV0hW1H2Ud1S-RRiMUdI9T0KdR9f3CqcbxsgkrtgrgTXma90LXQMCXRiSvBPBCCAafF5qV_y7ynx5APfgUVrNP-nIB4B0U2H97aSWVKS9CxFTB3us5CSLn9A9prgJlfCYMKF1_rd1GshNMGEutpIkLhjM92UOuCzcKEaI2gdrP9A9NDuDChgc.13KeYAYvbk6wryTG9iETw1UjrNK2Q7aZTz7xr8FzmWs&dib_tag=se&keywords=macbook&qid=1747510345&sprefix=mackboo%2Caps%2C161&sr=8-9&ufe=app_do%3Aamzn1.fos.de93fa6a-174c-4df7-be7c-5bc8e9c5a71b&th=1
+im31.jpg
+
+
+HUAWEI Laptop Thin & Light MateBook D 16 Intel 12th Core i5-12450H 16GB+512GB Win11, Type-C Fast Charging, Fingerprint, Plateado
+$12,499.00
+https://www.amazon.com.mx/HUAWEI-MateBook-i5-12450H-Charging-Fingerprint/dp/B0D1K924D8/ref=sr_1_4_sspa?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=15M26VSID6T1A&dib=eyJ2IjoiMSJ9.GQru_V5zPS8jmGiCmwKltAKqOHqorBnRNgrwInwULJ7_FIXHSWnbsT1Vxn4RavxAegtFKV5V_V4aupTP6QmJJHseYdrD5LVG6Kb94HCgof83cLBwiEoL-hDfxa7n0D4YCWY1r2xx1Cvv-vRpH_PbMtM3qjPmfv-FdX1NOxgx0Pg3zSH-Y1E-uGM22GMQHvkRLu_WJA1lCEVs52xyo4cZJytX9eHRbJHafsfskbBbAf9t_DzHhQ3qDkIceO46_OdffWYNdrEJDkBaM85CQI0n9oGWFEjC2EZSz0vjOYN3jD4.o-SnjMh__Q3pMhkt8sbN-b5C8ubB64QwRitV4XZDeoM&dib_tag=se&keywords=matebook&qid=1747510757&sprefix=matebook%2Caps%2C171&sr=8-4-spons&ufe=app_do%3Aamzn1.fos.709e624a-cf89-43d6-ada3-7117189c8ad8&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1
+im32.jpg
+
+
+HUAWEI Laptop Thin & Light MateBook D 14 Intel 12th Core i5-12450H 8GB+512GB Win11, Type-C Fast Charging, Fingerprint
+$9,697.11
+https://www.amazon.com.mx/HUAWEI-MateBook-i5-12450H-Charging-Fingerprint/dp/B0CR6JR7Y7/ref=sr_1_5?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=15M26VSID6T1A&dib=eyJ2IjoiMSJ9.GQru_V5zPS8jmGiCmwKltAKqOHqorBnRNgrwInwULJ7_FIXHSWnbsT1Vxn4RavxAegtFKV5V_V4aupTP6QmJJHseYdrD5LVG6Kb94HCgof83cLBwiEoL-hDfxa7n0D4YCWY1r2xx1Cvv-vRpH_PbMtM3qjPmfv-FdX1NOxgx0Pg3zSH-Y1E-uGM22GMQHvkRLu_WJA1lCEVs52xyo4cZJytX9eHRbJHafsfskbBbAf9t_DzHhQ3qDkIceO46_OdffWYNdrEJDkBaM85CQI0n9oGWFEjC2EZSz0vjOYN3jD4.o-SnjMh__Q3pMhkt8sbN-b5C8ubB64QwRitV4XZDeoM&dib_tag=se&keywords=matebook&qid=1747510757&sprefix=matebook%2Caps%2C171&sr=8-5&ufe=app_do%3Aamzn1.fos.709e624a-cf89-43d6-ada3-7117189c8ad8
+im33.jpg
+
+
+HUAWEI Laptop Thin & Light MateBook D 16 Intel 13th Core i5-13420H 16GB+1TB SSD Win11, Type-C Fast Charging, Fingerprint
+$14,399.00
+https://www.amazon.com.mx/Laptop-MateBook-i5-13420H-Charging-Fingerprint/dp/B0CPDLY5VV/ref=sr_1_6?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=15M26VSID6T1A&dib=eyJ2IjoiMSJ9.GQru_V5zPS8jmGiCmwKltAKqOHqorBnRNgrwInwULJ7_FIXHSWnbsT1Vxn4RavxAegtFKV5V_V4aupTP6QmJJHseYdrD5LVG6Kb94HCgof83cLBwiEoL-hDfxa7n0D4YCWY1r2xx1Cvv-vRpH_PbMtM3qjPmfv-FdX1NOxgx0Pg3zSH-Y1E-uGM22GMQHvkRLu_WJA1lCEVs52xyo4cZJytX9eHRbJHafsfskbBbAf9t_DzHhQ3qDkIceO46_OdffWYNdrEJDkBaM85CQI0n9oGWFEjC2EZSz0vjOYN3jD4.o-SnjMh__Q3pMhkt8sbN-b5C8ubB64QwRitV4XZDeoM&dib_tag=se&keywords=matebook&qid=1747510757&sprefix=matebook%2Caps%2C171&sr=8-6&ufe=app_do%3Aamzn1.fos.709e624a-cf89-43d6-ada3-7117189c8ad8&th=1
+im34.jpg
+
+
+HUAWEI Laptop Thin & Light MateBook D 16 Intel 12th Core i5-12450H 16GB+512GB Win11, Type-C Fast Charging, Fingerprint, Plateado + Mouse
+$12,499.00
+https://www.amazon.com.mx/HUAWEI-MateBook-i5-12450H-Charging-Fingerprint/dp/B0DNKKFZ6Z/ref=sr_1_7?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=15M26VSID6T1A&dib=eyJ2IjoiMSJ9.GQru_V5zPS8jmGiCmwKltAKqOHqorBnRNgrwInwULJ7_FIXHSWnbsT1Vxn4RavxAegtFKV5V_V4aupTP6QmJJHseYdrD5LVG6Kb94HCgof83cLBwiEoL-hDfxa7n0D4YCWY1r2xx1Cvv-vRpH_PbMtM3qjPmfv-FdX1NOxgx0Pg3zSH-Y1E-uGM22GMQHvkRLu_WJA1lCEVs52xyo4cZJytX9eHRbJHafsfskbBbAf9t_DzHhQ3qDkIceO46_OdffWYNdrEJDkBaM85CQI0n9oGWFEjC2EZSz0vjOYN3jD4.o-SnjMh__Q3pMhkt8sbN-b5C8ubB64QwRitV4XZDeoM&dib_tag=se&keywords=matebook&qid=1747510757&sprefix=matebook%2Caps%2C171&sr=8-7&ufe=app_do%3Aamzn1.fos.709e624a-cf89-43d6-ada3-7117189c8ad8
+im35.jpg
+
+
+Huawei MateBook 14 Intel Core Ultra 5 16GB RAM + 1TB SSD Win11, Pantalla OLED Táctil 2.8K, Type-C Fast Charging
+$19,275.11
+https://www.amazon.com.mx/Huawei-MateBook-Pantalla-T%C3%A1ctil-Charging/dp/B0DJWM6KRW/ref=sr_1_8?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=15M26VSID6T1A&dib=eyJ2IjoiMSJ9.GQru_V5zPS8jmGiCmwKltAKqOHqorBnRNgrwInwULJ7_FIXHSWnbsT1Vxn4RavxAegtFKV5V_V4aupTP6QmJJHseYdrD5LVG6Kb94HCgof83cLBwiEoL-hDfxa7n0D4YCWY1r2xx1Cvv-vRpH_PbMtM3qjPmfv-FdX1NOxgx0Pg3zSH-Y1E-uGM22GMQHvkRLu_WJA1lCEVs52xyo4cZJytX9eHRbJHafsfskbBbAf9t_DzHhQ3qDkIceO46_OdffWYNdrEJDkBaM85CQI0n9oGWFEjC2EZSz0vjOYN3jD4.o-SnjMh__Q3pMhkt8sbN-b5C8ubB64QwRitV4XZDeoM&dib_tag=se&keywords=matebook&qid=1747510757&sprefix=matebook%2Caps%2C171&sr=8-8&ufe=app_do%3Aamzn1.fos.709e624a-cf89-43d6-ada3-7117189c8ad8
+im36.jpg
+
+
+HUAWEI Laptop Thin & Light MateBook D 16 Intel 12th Core i5-12450H 16GB+512GB Win11, Type-C Fast Charging, Fingerprint, Plateado
+$12,499.00
+https://www.amazon.com.mx/HUAWEI-MateBook-i5-12450H-Charging-Fingerprint/dp/B0D1K924D8/ref=sr_1_9?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=15M26VSID6T1A&dib=eyJ2IjoiMSJ9.GQru_V5zPS8jmGiCmwKltAKqOHqorBnRNgrwInwULJ7_FIXHSWnbsT1Vxn4RavxAegtFKV5V_V4aupTP6QmJJHseYdrD5LVG6Kb94HCgof83cLBwiEoL-hDfxa7n0D4YCWY1r2xx1Cvv-vRpH_PbMtM3qjPmfv-FdX1NOxgx0Pg3zSH-Y1E-uGM22GMQHvkRLu_WJA1lCEVs52xyo4cZJytX9eHRbJHafsfskbBbAf9t_DzHhQ3qDkIceO46_OdffWYNdrEJDkBaM85CQI0n9oGWFEjC2EZSz0vjOYN3jD4.o-SnjMh__Q3pMhkt8sbN-b5C8ubB64QwRitV4XZDeoM&dib_tag=se&keywords=matebook&qid=1747510757&sprefix=matebook%2Caps%2C171&sr=8-9&ufe=app_do%3Aamzn1.fos.709e624a-cf89-43d6-ada3-7117189c8ad8
+im37.jpg
+
+
+
+SAMSUNG Chromebook Plus V2 portátil 2 en 1-4 GB de RAM, 64 GB eMMC, cámara de 13 MP, Sistema operativo Cromo, 12.2 Pulgadas, relación de Aspecto 16:10 - XE520QAB-K03US Light Titan
+$6,357.43
+https://www.amazon.com.mx/SAMSUNG-Chromebook-Plus-operativo-XE520QAB-K03US/dp/B07J215RPT/ref=sr_1_6?crid=CIOOKTJNKT33&dib=eyJ2IjoiMSJ9.E1eUV9v535dHWuxM_euPcG3Y-KwMNBNVlMT0njRM6jjUJ9goiw6vOG2iXx3t6B_jTKoAopVYSq_J-IUPc_fQOqTRbpUkQ0i1kj8iQtZGV5CCvLdXfEhvSgLNEKl_w3Ckbp-VZ7xKbhayXvGm-cA6TILD_q3MPMUbgxZzPA9oZwbmJvD3qnX29wJxHX14wbZEfryJ7_Qi_7RB3cenc9s3Ag4UAdOqdPoaQ_f9fDW5zi1H6hefiRwIcXP-M6hURaWAiz_miZlEZ2oozMpGr8h5TeM_IUYG8fhn5NJIHJp0zQQ.44e_CbDdbxIUqmuWDUmzY4rjxrHUljDHt-tfb2p4TvQ&dib_tag=se&keywords=laptop%2Bsamsung&qid=1747511326&sprefix=laptop%2Bsam%2Caps%2C163&sr=8-6&ufe=app_do%3Aamzn1.fos.44a97073-60b7-4563-a75a-8c47678c9132&th=1
+im38.jpg
+
+
+SAMSUNG Galaxy Book4 2024 - Laptop de negocios de 15.6 pulgadas FHD IPS de 10 núcleos Intel 7 150U 16GB LPDDR4 512GB SSD Intel Graphics Wi-Fi 6 teclado retroiluminado con huella dactilar Win11 Home
+$18,290.00
+https://www.amazon.com.mx/SAMSUNG-Galaxy-Book4-2024-retroiluminado/dp/B0D2W14QQT/ref=sr_1_9?crid=CIOOKTJNKT33&dib=eyJ2IjoiMSJ9.E1eUV9v535dHWuxM_euPcG3Y-KwMNBNVlMT0njRM6jjUJ9goiw6vOG2iXx3t6B_jTKoAopVYSq_J-IUPc_fQOqTRbpUkQ0i1kj8iQtZGV5CCvLdXfEhvSgLNEKl_w3Ckbp-VZ7xKbhayXvGm-cA6TILD_q3MPMUbgxZzPA9oZwbmJvD3qnX29wJxHX14wbZEfryJ7_Qi_7RB3cenc9s3Ag4UAdOqdPoaQ_f9fDW5zi1H6hefiRwIcXP-M6hURaWAiz_miZlEZ2oozMpGr8h5TeM_IUYG8fhn5NJIHJp0zQQ.44e_CbDdbxIUqmuWDUmzY4rjxrHUljDHt-tfb2p4TvQ&dib_tag=se&keywords=laptop+samsung&qid=1747511326&sprefix=laptop+sam%2Caps%2C163&sr=8-9&ufe=app_do%3Aamzn1.fos.628a2120-cf12-4882-b7cf-30e681beb181
+im39.jpg
+
+Samsung Chromebook Plus V2 2 en 1 WUXGA LED visualización táctil portátil de 12.2 pulgadas, Intel Celeron 3965Y, 4GB RAM, 64GB eMMC, 2 cámaras, lápiz capacitivo, tipo isla KB, Wi-Fi 5, cromado OS,
+$7,379.83
+https://www.amazon.com.mx/SAMSUNG-Chromebook-Plus-V2-visualizaci%C3%B3n/dp/B0CN3547M9/ref=sr_1_15?crid=CIOOKTJNKT33&dib=eyJ2IjoiMSJ9.E1eUV9v535dHWuxM_euPcG3Y-KwMNBNVlMT0njRM6jjUJ9goiw6vOG2iXx3t6B_jTKoAopVYSq_J-IUPc_fQOqTRbpUkQ0i1kj8iQtZGV5CCvLdXfEhvSgLNEKl_w3Ckbp-VZ7xKbhayXvGm-cA6TILD_q3MPMUbgxZzPA9oZwbmJvD3qnX29wJxHX14wbZEfryJ7_Qi_7RB3cenc9s3Ag4UAdOqdPoaQ_f9fDW5zi1H6hefiRwIcXP-M6hURaWAiz_miZlEZ2oozMpGr8h5TeM_IUYG8fhn5NJIHJp0zQQ.44e_CbDdbxIUqmuWDUmzY4rjxrHUljDHt-tfb2p4TvQ&dib_tag=se&keywords=laptop+samsung&qid=1747511326&sprefix=laptop+sam%2Caps%2C163&sr=8-15&ufe=app_do%3Aamzn1.fos.44a97073-60b7-4563-a75a-8c47678c9132
+im40.jpg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

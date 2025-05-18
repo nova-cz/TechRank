@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -77,10 +76,21 @@
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 
+  /* 🔧 Oculta las flechas en todos los inputs de tipo number */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
   .glass-card {
     @apply bg-white/90 dark:bg-black/90 border border-white/20 dark:border-white/10 shadow-lg;
   }
-  
+
   .hover-scale {
     @apply transition-all duration-300 hover:scale-105;
   }
@@ -88,23 +98,23 @@
   .text-gradient {
     @apply bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text;
   }
-  
+
   .nike-button {
     @apply bg-primary text-primary-foreground rounded-full px-6 py-2 font-bold transition-all hover:opacity-80 uppercase text-sm tracking-wider;
   }
-  
+
   .nike-card {
     @apply bg-background rounded-none overflow-hidden hover:shadow-lg transition-all duration-300;
   }
-  
+
   .nike-section {
     @apply py-16 bg-secondary;
   }
-  
+
   .nike-title {
     @apply text-3xl md:text-4xl font-bold uppercase tracking-tight;
   }
-  
+
   .nike-subtitle {
     @apply text-xl text-muted-foreground tracking-wide;
   }
